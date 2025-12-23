@@ -1,0 +1,55 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Attendance";
+    ViewBag.SubPageTitle = "Details";
+}
+
+
+@model IEnumerable<SchoolManagementSystem.Models.StudentAttendanceViewModel>
+
+<h2>Attendance List</h2>
+
+<form asp-action="Index" method="get" class="form-inline mb-3">
+    <div class="form-group">
+        <label for="SchoolClassId" class="mr-2">Select Class:</label>
+        <select id="SchoolClassId" name="classId" class="form-control mr-2">
+            <option value="">-- Select Class --</option>
+            @foreach (var schoolClass in ViewBag.Classes)
+            {
+                <option value="@schoolClass.Value">@schoolClass.Text</option>
+            }
+        </select>
+        <input type="submit" value="Filter" class="btn btn-primary" />
+    </div>
+</form>
+
+@if (Model.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Total Absences</th>
+                <th>Overall Attendance Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var studentAttendance in Model)
+            {
+                <tr>
+                    <td>@studentAttendance.Student.FirstName @studentAttendance.Student.LastName</td>
+                    <td>@studentAttendance.TotalAbsences</td>
+                    <td>@studentAttendance.OverallAttendanceStatus()</td>
+                    <td>
+                        <a class="btn btn-info btn-sm" asp-action="Details" asp-route-studentId="@studentAttendance.Student.Id">Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="alert alert-info">Please select a class to see the students and their attendances.</div>
+}

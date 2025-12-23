@@ -1,0 +1,94 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Teachers";
+    ViewBag.SubPageTitle = "Details";
+}
+
+@model SchoolManagementSystem.Models.TeacherViewModel
+
+@{
+    ViewData["Title"] = "Teacher Details";
+}
+
+<h2>Teacher Details</h2>
+
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="@Model.ImageFullPath" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%;" />
+            </div>
+            <div class="col-md-8">
+                <h4>@Model.FirstName @Model.LastName</h4>
+                <hr />
+                <dl class="row">
+                    <!-- Data de contratação -->
+                    <dt class="col-sm-3" data-toggle="tooltip" title="Date of hire">Hire Date:</dt>
+                    <dd class="col-sm-9">@Model.FormattedHireDate</dd>
+
+                    <!-- Status -->
+                    <dt class="col-sm-3" data-toggle="tooltip" title="Current status of the teacher">Status:</dt>
+                    <dd class="col-sm-9">@Model.Status</dd>
+
+                    <!-- Grau acadêmico -->
+                    <dt class="col-sm-3" data-toggle="tooltip" title="Academic degree of the teacher">Academic Degree:</dt>
+                    <dd class="col-sm-9">@Model.AcademicDegree</dd>
+
+                    <!-- User ID -->
+                    <dt class="col-sm-3">User ID:</dt>
+                    <dd class="col-sm-9">@Model.UserId</dd>
+
+                    <!-- Turmas associadas -->
+                    <dt class="col-sm-3" data-toggle="tooltip" title="Classes the teacher is associated with">School Classes:</dt>
+                    <dd class="col-sm-9">
+                        @if (Model.SchoolClasses != null && Model.SchoolClasses.Any())
+                        {
+                            <ul>
+                                @foreach (var schoolClass in Model.SchoolClasses)
+                                {
+                                    <li>@schoolClass.ClassName</li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <span>No classes assigned</span>
+                        }
+                    </dd>
+
+                    <!-- Disciplinas associadas -->
+                    <dt class="col-sm-3" data-toggle="tooltip" title="Subjects the teacher teaches">Subjects:</dt>
+                    <dd class="col-sm-9">
+                        @if (Model.Subjects != null && Model.Subjects.Any())
+                        {
+                            <ul>
+                                @foreach (var subject in Model.Subjects)
+                                {
+                                    <li>@subject.Name</li>
+                                }
+                            </ul>
+                        }
+                        else
+                        {
+                            <span>No subjects assigned</span>
+                        }
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+            <a asp-action="Index" asp-route-id="@Model.Id" class="btn btn-secondary">Back to List</a>
+            <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Ativar tooltip
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+}

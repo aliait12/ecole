@@ -1,0 +1,48 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Grade";
+    ViewBag.SubPageTitle = "EditGrade";
+}
+
+@model SchoolManagementSystem.Models.GradeViewModel
+
+<h2>Edit Grade</h2>
+
+<form asp-action="EditGrade" method="post">
+    <div class="form-group">
+        <label asp-for="Value"></label>
+        <input asp-for="Value" class="form-control" />
+        <span asp-validation-for="Value" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label>Student</label>
+        <input type="text" class="form-control" value="@Model.StudentName" readonly />
+        <input type="hidden" asp-for="StudentName" value="@Model.StudentName" /> <!-- Hidden field for StudentName -->
+    </div>
+
+    <div class="form-group">
+        <label>Subject</label>
+        <input type="text" class="form-control" value="@Model.SubjectName" readonly />
+        <input type="hidden" asp-for="SubjectName" value="@Model.SubjectName" /> <!-- Hidden field for SubjectName -->
+    </div>
+
+    <input type="hidden" asp-for="StudentId" />
+    <input type="hidden" asp-for="SubjectId" />
+    <input type="hidden" asp-for="Id" /> <!-- Hidden field for Grade Id -->
+
+    <button type="submit" class="btn btn-success">Save Changes</button>
+    <a asp-action="Details" asp-route-studentId="@Model.StudentId" class="btn btn-secondary">Cancel</a>
+</form>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}

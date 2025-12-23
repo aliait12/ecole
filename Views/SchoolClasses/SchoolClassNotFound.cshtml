@@ -1,0 +1,16 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "SchoolClasses";
+    ViewBag.SubPageTitle = "SchoolClassNotFound";
+}
+
+@{
+    ViewData["Title"] = "School Class Not Found";
+}
+
+<h2>School Class Not Found</h2>
+
+<div class="alert alert-warning">
+    <p>Sorry, the School Class you are looking for could not be found.</p>
+    <a href="@Url.Action("Index", "SchoolClasses")" class="btn btn-primary">Back to School Class List</a>
+</div>

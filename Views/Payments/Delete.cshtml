@@ -1,0 +1,11 @@
+﻿@model SchoolManagementSystem.Data.Entities.Payment
+@{
+    ViewData["Title"] = "Delete Payment";
+}
+
+<h2>Are you sure you want to delete the payment for @Model.Student?</h2>
+
+<form asp-action="DeleteConfirmed">
+    <input type="hidden" asp-for="Id" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+</form>

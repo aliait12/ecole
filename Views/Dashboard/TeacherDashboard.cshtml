@@ -1,0 +1,121 @@
+﻿@model SchoolManagementSystem.Models.TeacherDashboardViewModel
+@{
+    Layout = "_Dashboard";
+    ViewBag.Title = "Teacher Dashboard";
+}
+
+<div class="container-fluid">
+    <h2 class="mb-1">Teacher Dashboard</h2>
+    <p class="text-muted">Welcome, <b>@(Model?.TeacherName ?? "Teacher")</b> 👋</p>
+
+    @if (ViewBag.Error != null)
+    {
+        <div class="alert alert-warning">@ViewBag.Error</div>
+    }
+
+    <div class="row g-3 mb-4">
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <div class="text-muted">My Classes</div>
+                        <div class="fs-3 fw-bold">@Model.TotalClasses</div>
+                    </div>
+                    <div class="fs-2">🏫</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <div class="text-muted">My Subjects</div>
+                        <div class="fs-3 fw-bold">@Model.TotalSubjects</div>
+                    </div>
+                    <div class="fs-2">📚</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <div class="text-muted">Total Students (in my classes)</div>
+                        <div class="fs-3 fw-bold">@Model.TotalStudents</div>
+                    </div>
+                    <div class="fs-2">👥</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row g-3">
+        <div class="col-lg-8">
+            <div class="card shadow-sm">
+                <div class="card-header fw-semibold">My Classes</div>
+                <div class="card-body p-0">
+                    <table class="table table-striped mb-0">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Class</th>
+                                <th>Course</th>
+                                <th>Students</th>
+                                <th>Start</th>
+                                <th>End</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @if (Model.Classes != null && Model.Classes.Any())
+                            {
+                                foreach (var c in Model.Classes)
+                                {
+                                    <tr>
+                                        <td>@c.ClassName</td>
+                                        <td>@c.CourseName</td>
+                                        <td>@c.StudentsCount</td>
+                                        <td>@(c.StartDate?.ToString("dd/MM/yyyy") ?? "-")</td>
+                                        <td>@(c.EndDate?.ToString("dd/MM/yyyy") ?? "-")</td>
+                                    </tr>
+                                }
+                            }
+                            else
+                            {
+                                <tr>
+                                    <td colspan="5" class="text-center text-muted p-4">
+                                        No classes assigned to this teacher yet.
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-4">
+            <div class="card shadow-sm">
+                <div class="card-header fw-semibold">My Subjects</div>
+                <div class="card-body">
+                    @if (Model.Subjects != null && Model.Subjects.Any())
+                    {
+                        <ul class="list-group">
+                            @foreach (var s in Model.Subjects)
+                            {
+                                <li class="list-group-item d-flex justify-content-between">
+                                    <span>@s.Name</span>
+                                    <span class="badge bg-secondary">#@s.Id</span>
+                                </li>
+                            }
+                        </ul>
+                    }
+                    else
+                    {
+                        <div class="text-muted">No subjects assigned yet.</div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

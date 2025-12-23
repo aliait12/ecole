@@ -1,0 +1,33 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Attendance";
+    ViewBag.SubPageTitle = "DeleteAttendance";
+}
+
+@model SchoolManagementSystem.Models.AttendanceViewModel
+@{
+    ViewBag.Title = "Delete Attendance";
+}
+
+<h2>Delete Attendance for @Model.StudentName</h2>
+
+<p>Are you sure you want to delete this attendance?</p>
+
+<form asp-action="DeleteAttendance" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="SubjectName">Subject</label>
+        <input asp-for="SubjectName" class="form-control" readonly />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Date">Date</label>
+        <input asp-for="Date" class="form-control" readonly />
+    </div>
+
+    <input type="hidden" asp-for="StudentId" />
+
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Details" asp-route-studentId="@Model.StudentId" class="btn btn-secondary">Cancel</a>
+</form>

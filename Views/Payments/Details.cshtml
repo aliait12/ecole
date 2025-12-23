@@ -1,0 +1,14 @@
+﻿@model SchoolManagementSystem.Data.Entities.Payment
+@{
+    ViewData["Title"] = "Payment Details";
+}
+
+<h2>Payment Details for @Model.Student</h2>
+<p><strong>Amount:</strong> @Model.Amount</p>
+<p><strong>Date:</strong> @Model.PaymentDate</p>
+<p><strong>Status:</strong> @Model.Status</p>
+
+<p>
+    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a> |
+    <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+</p>

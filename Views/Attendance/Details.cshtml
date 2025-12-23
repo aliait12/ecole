@@ -1,0 +1,104 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Attendance";
+    ViewBag.SubPageTitle = "Details";
+}
+
+@model IEnumerable<SchoolManagementSystem.Models.StudentSubjectAttendanceViewModel>
+
+<h2>Attendance Details for @Model.First().StudentName</h2>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Subject</th>
+            <th>Total Classes</th>
+            <th>Total Absences</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Subject.Name</td>
+                <td>@item.TotalClasses</td>
+                <td>@item.TotalAbsences</td>
+                <td>@item.SubjectAttendanceStatus()</td>
+                <td>
+                    @if (item.CanAddAttendance)
+                    {
+                        <a asp-action="AddAttendance" asp-route-studentId="@item.StudentId" asp-route-subjectId="@item.Subject.Id" class="btn btn-primary">Add Attendance</a>
+                    }
+                    else
+                    {
+                        <button class="btn btn-secondary" disabled>Add Attendance</button>
+                    }
+                    <a asp-action="DeleteAttendance" asp-route-id="@item.Attendance?.Id" class="btn btn-danger">Delete Attendance</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<h3>All Absences</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Subject</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var attendance in Model.SelectMany(a => a.AllAttendances))
+        {
+            <tr>
+                <td>@attendance.Date.ToString("dd/MM/yyyy")</td>
+                <td>@attendance.Subject.Name</td>
+                <td>@attendance.Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Index" asp-route-classId="@ViewBag.ClassId" class="btn btn-secondary">Back to Class</a>
+
+
+
+<div id="scheduler"></div>
+
+@section Scripts {
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+    <script>
+        var attendanceData = @Html.Raw(Json.Serialize(Model.SelectMany(a => a.AllAttendances).Select(a => new
+            {
+                Id = a.Id,
+                SubjectName = a.Subject.Name,
+                StartTime = a.Date.ToUniversalTime(), 
+                EndTime = a.Date.ToUniversalTime().AddHours(1), 
+                Description = a.Description
+            })));
+
+        console.log(attendanceData);
+
+        var scheduleObj = new ej.schedule.Schedule({
+            height: '550px',
+            readonly: true, 
+            eventSettings: {
+                dataSource: attendanceData, 
+                fields: {
+                    subject: { name: 'SubjectName' },
+                    startTime: { name: 'StartTime' },
+                    endTime: { name: 'EndTime' }, 
+                    description: { name: 'Description' }
+                }
+            }
+        });
+
+        scheduleObj.appendTo('#scheduler');
+    </script>
+}
+
+

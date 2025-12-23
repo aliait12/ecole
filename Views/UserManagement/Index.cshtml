@@ -1,0 +1,25 @@
+﻿@model IEnumerable<SchoolManagementSystem.Data.Entities.User>
+
+<h2>Users Pending Role Assignment</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model)
+        {
+            <tr>
+                <td>@user.FullName</td>
+                <td>@user.Email</td>
+                <td>
+                    <a href="@Url.Action("AssignRole", "UserManagement", new { userId = user.Id })" class="btn btn-primary">Assign Role</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

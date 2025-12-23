@@ -1,0 +1,59 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Employee";
+    ViewBag.SubPageTitle = "Details";
+}
+
+@model SchoolManagementSystem.Models.EmployeeViewModel
+
+@{
+    ViewData["Title"] = "Employee Details";
+}
+
+<h2>Employee Details</h2>
+
+<div class="card">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="@Model.ImageFullPath" alt="Profile Picture" style="width: 150px; height: 150px; border-radius: 50%;" />
+            </div>
+            <div class="col-md-8">
+                <h4>@Model.FirstName @Model.LastName</h4>
+                <hr />
+                <dl class="row">
+                    <dt class="col-sm-3" data-toggle="tooltip" title="The date the employee was hired">Hire Date:</dt>
+                    <dd class="col-sm-9">@Model.HireDate?.ToString("d")</dd>
+
+                    <dt class="col-sm-3" data-toggle="tooltip" title="Current status of the employee">Status:</dt>
+                    <dd class="col-sm-9">@Model.Status</dd>
+
+                    <dt class="col-sm-3" data-toggle="tooltip" title="Department the employee works in">Department:</dt>
+                    <dd class="col-sm-9">@Model.Department</dd>
+
+                    <dt class="col-sm-3" data-toggle="tooltip" title="Academic degree of the employee">Academic Degree:</dt>
+                    <dd class="col-sm-9">@Model.AcademicDegree</dd>
+
+                    <dt class="col-sm-3" data-toggle="tooltip" title="Phone number of the employee">Phone Number:</dt>
+                    <dd class="col-sm-9">@Model.PhoneNumber</dd>
+
+                    <dt class="col-sm-3">User ID:</dt>
+                    <dd class="col-sm-9">@Model.UserId</dd>
+                </dl>
+            </div>
+        </div>
+        <div>
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Edit</a>
+            <a asp-action="Index" asp-route-id="@Model.Id" class="btn btn-secondary">Back to List</a>
+            <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+}

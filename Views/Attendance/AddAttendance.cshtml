@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Attendance";
+    ViewBag.SubPageTitle = "AddAttendance";
+}
+
+@model SchoolManagementSystem.Models.AttendanceViewModel
+@{
+    ViewBag.Title = "Add Attendance";
+}
+
+<h2>Add Attendance for @Model.StudentName</h2>
+
+<form asp-action="AddAttendance" method="post">
+    <div class="form-group">
+        <label asp-for="SubjectName">Subject</label>
+        <input asp-for="SubjectName" class="form-control" readonly />
+        <input type="hidden" asp-for="SubjectId" />
+    </div>
+
+    <div class="form-group">
+        <label>Student</label>
+        <input type="text" class="form-control" value="@Model.StudentName" readonly />
+        <input type="hidden" asp-for="StudentName" value="@Model.StudentName" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Date">Date</label>
+        <input asp-for="Date" class="form-control" type="datetime-local" />
+        <span asp-validation-for="Date" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description">Description (Optional)</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+
+    <input type="hidden" asp-for="StudentId" />
+
+    <button type="submit" class="btn btn-success">Add Attendance</button>
+    <a asp-action="Details" asp-route-studentId="@Model.StudentId" class="btn btn-secondary">Cancel</a>
+</form>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}

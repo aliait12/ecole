@@ -1,0 +1,54 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Grade";
+    ViewBag.SubPageTitle = "Index";
+}
+
+@model IEnumerable<SchoolManagementSystem.Models.StudentGradeAverageViewModel>
+
+<h2>Grades List</h2>
+
+<form asp-action="Index" method="get" class="form-inline mb-3">
+    <div class="form-group">
+        <label for="SchoolClassId" class="mr-2">Select Class:</label>
+        <select id="SchoolClassId" name="classId" class="form-control mr-2">
+            <option value="">-- Select Class --</option>
+            @foreach (var schoolClass in ViewBag.Classes)
+            {
+                <option value="@schoolClass.Value">@schoolClass.Text</option>
+            }
+        </select>
+        <input type="submit" value="Filter" class="btn btn-primary" />
+    </div>
+</form>
+
+@if (Model.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>Average Grade</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var student in Model)
+            {
+                <tr>
+                    <td>@student.Student.FirstName @student.Student.LastName</td>
+                    <td>@student.AverageGrade.ToString("F2")</td> 
+                    <td>@student.Status</td> 
+                    <td>
+                        <a class="btn btn-info btn-sm" asp-action="Details" asp-route-studentId="@student.Student.Id">Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <div class="alert alert-info">Please select a class to see the students and their grades.</div>
+}

@@ -1,0 +1,19 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Grade";
+    ViewBag.SubPageTitle = "GradeNotFound";
+}
+
+@{
+    ViewData["Title"] = "Grade Not Found";
+}
+
+<h2>Grade Not Found</h2>
+
+<div class="alert alert-warning">
+    <p>Sorry, the Grade you are looking for could not be found.</p>
+    @if (User.IsInRole("Employee") || User.IsInRole("Admin"))
+    {
+        <a href="@Url.Action("Index", "Grades")" class="btn btn-primary">Back to Grade List</a>
+    }
+</div>

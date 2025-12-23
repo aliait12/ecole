@@ -1,0 +1,48 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Grade";
+    ViewBag.SubPageTitle = "Details";
+}
+
+@model IEnumerable<SchoolManagementSystem.Models.StudentSubjectGradeViewModel>
+
+@{
+    ViewBag.Title = $"{Model.First().StudentName}'s Grades"; // Using student's name for the title
+}
+
+<h2>Subjects and Grades of @Model.First().StudentName</h2> <!-- Displaying the student's name -->
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Subject</th>
+            <th>Grade</th>
+            <th>Status</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Subject.Name</td>
+                <td>@(item.Grade?.Value.ToString("F2") ?? "No Grade")</td> <!-- Formatting the grade -->
+                <td>@(item.Grade?.Status ?? "No Status")</td>
+                <td>
+                    @if (item.Grade == null)
+                    {
+                        <a asp-action="AddGrade" asp-route-studentId="@item.StudentId" asp-route-subjectId="@item.Subject.Id" class="btn btn-primary">Add Grade</a>
+                    }
+                    else
+                    {
+                        <a asp-action="EditGrade" asp-route-id="@item.Grade.Id" class="btn btn-warning">Edit</a>
+                        <a asp-action="DeleteGrade" asp-route-id="@item.Grade.Id" class="btn btn-danger">Delete</a>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Back button -->
+<a asp-action="Index" class="btn btn-secondary">Back</a>

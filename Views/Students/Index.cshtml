@@ -1,0 +1,108 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Students";
+    ViewBag.SubPageTitle = "Index";
+}
+
+@using Newtonsoft.Json
+@model IEnumerable<SchoolManagementSystem.Data.Entities.Student>
+
+@{
+    ViewData["Title"] = "Students List";
+
+    // Define as configurações do JSON para evitar referência circular
+    var jsonSerializerSettings = new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
+                Formatting = Formatting.Indented // Formatação mais legível para debug
+            };
+
+    // Serializa o modelo usando essas configurações
+    var serializedData = JsonConvert.SerializeObject(Model, jsonSerializerSettings);
+}
+
+<h2>Students</h2>
+
+<div>
+    <a asp-action="Create" class="btn btn-success mb-3">Create Student</a>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">No students found.</div>
+}
+else
+{
+    <div id="Grid"></div>
+}
+
+@section Scripts {
+    <script id="profilePictureTemplate" type="text/x-template">
+        <img src="${ImageFullPath}" alt="Profile Picture" style="width: 50px; height: 50px; border-radius: 50%;" />
+    </script>
+
+    <script id="actionTemplate" type="text/x-template">
+        <a href="/Students/Edit/${Id}" class="btn btn-warning">Edit</a>
+        <a href="/Students/Delete/${Id}" class="btn btn-danger">Delete</a>
+        <a href="/Students/Details/${Id}" class="btn btn-primary">Details</a>
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var serializedData = @Html.Raw(serializedData); // Use o serializedData JSON aqui
+
+            // Mapeia o Status para um texto legível
+            serializedData.forEach(function (student) {
+                switch (student.Status) {
+                    case 0: // Assuming Pending is 0
+                        student.StatusText = "Pending";
+                        break;
+                    case 1: // Assuming Active is 1
+                        student.StatusText = "Active";
+                        break;
+                    case 2: // Assuming Inactive is 2
+                        student.StatusText = "Inactive";
+                        break;
+                }
+            });
+
+            var grid = new ej.grids.Grid({
+                dataSource: serializedData,
+                allowPaging: true,            // Habilita paginação
+                allowSorting: true,           // Habilita ordenação
+                allowFiltering: true,         // Habilita filtragem
+                allowGrouping: true,          // Habilita agrupamento
+                filterSettings: { type: 'Menu' }, // Habilita filtro de menu
+                pageSettings: { pageSize: 10 },
+                toolbar: ['Search'],           // Adiciona barra de pesquisa
+                groupSettings: { showGroupedColumn: true }, // Mostra a coluna agrupada
+                columns: [
+                    {
+                        field: "ImageFullPath",
+                        headerText: "Profile Picture",
+                        width: 100,
+                        textAlign: "Center",
+                        template: "#profilePictureTemplate"
+                    },
+                    { field: "FirstName", headerText: "First Name", width: 120 },
+                    { field: "LastName", headerText: "Last Name", width: 120 },
+                    {
+                        field: "FormattedEnrollmentDate", // Usando a nova propriedade formatada
+                        headerText: "Enrollment Date",
+                        width: 150
+                    },
+                    { field: "StatusText", headerText: "Status", width: 100 }, // Exibe o nome do Status ao invés de números
+                    { field: "SchoolClass.ClassName", headerText: "School Class", width: 150 },
+                    {
+                        headerText: "Actions",
+                        width: 180,
+                        textAlign: "Center",
+                        template: "#actionTemplate"
+                    }
+                ]
+            });
+
+            grid.appendTo("#Grid"); // Aplica o grid ao elemento DOM com id 'Grid'
+        });
+    </script>
+}

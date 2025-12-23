@@ -1,0 +1,417 @@
+﻿@model SchoolManagementSystem.Models.HomeViewModel
+
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- banner section -->
+<section id="home" class="w3l-banner py-5">
+    <div class="banner-content">
+        <div class="container py-4">
+            <div class="row align-items-center pt-sm-5 pt-4">
+                <div class="col-md-6">
+                    <h3 class="mb-lg-4 mb-3">Master Your Future With<span class="d-block">Cutting-Edge Education</span></h3>
+                    <p class="banner-sub">Innovative Learning, Industry Experts & Creative Environment</p>
+                    <div class="d-flex align-items-center buttons-banner">
+                        <a href="contact.html" class="btn btn-style mt-lg-5 mt-4 disabled">MAARIF Academy</a>
+                    </div>
+                </div>
+                <div class="col-md-6 right-banner-2 text-end position-relative mt-md-0 mt-5">
+                    <div class="sub-banner-image mx-auto">
+                        <img src="~/images/banner.png" class="img-fluid position-relative" alt="DevArt Academy Banner">
+                    </div>
+                    <div class="banner-style-1 position-absolute">
+                        <div class="banner-style-2 position-relative">
+                            <h4>Shape Your Skills</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //banner section -->
+<!-- home 4grids block -->
+<section class="services-w3l-block py-5" id="features">
+    <div class="container py-md-5 py-4">
+        <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:500px;">
+            <p class="text-uppercase">Key Features</p>
+            <h3 class="title-style">Achieve Your Creative Potential With EMSI Academy</h3>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch">
+                <div class="icon-box icon-box-clr-1">
+                    <div class="icon"><i class="fas fa-palette"></i></div>
+                    <h4 class="title"><a href="#about">Creative Mentors</a></h4>
+                    <p>Learn from industry-leading professionals with real-world experience in programming.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mt-md-0 mt-4">
+                <div class="icon-box icon-box-clr-2">
+                    <div class="icon"><i class="fas fa-laptop-code"></i></div>
+                    <h4 class="title"><a href="#about">Hands-On Learning</a></h4>
+                    <p>Engage in practical projects that mirror real industry challenges to build your portfolio.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mt-lg-0 mt-4">
+                <div class="icon-box icon-box-clr-3">
+                    <div class="icon"><i class="fas fa-headset"></i></div>
+                    <h4 class="title"><a href="#about">Ongoing Support</a></h4>
+                    <p>Benefit from continuous support, career guidance, and a vibrant community of creators.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 d-flex align-items-stretch mt-lg-0 mt-4">
+                <div class="icon-box icon-box-clr-4">
+                    <div class="icon"><i class="fas fa-award"></i></div>
+                    <h4 class="title"><a href="#about">Exclusive Certifications</a></h4>
+                    <p>Earn recognized certifications to showcase your skills in design and programming to employers.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- home 4grids block -->
+<!-- home image with content block -->
+<section class="w3l-servicesblock pt-lg-5 pt-4 pb-5 mb-lg-5" id="about">
+    <div class="container pb-md-5 pb-4">
+        <div class="row pb-xl-5 align-items-center">
+            <div class="col-lg-6 position-relative home-block-3-left pb-lg-0 pb-5">
+                <div class="position-relative">
+                    <img src="~/images/img1.jpg" alt="" class="img-fluid radius-image">
+                </div>
+                <div class="imginfo__box">
+                    <h6 class="imginfo__title">Join EMSI Academy Today!</h6>
+                    <p>Unlock your creative potential with personalized learning<br> and expert mentorship.</p>
+                    <a href="tel:http://1(800)7654321"><i class="fas fa-phone-alt"></i> 0772173346</a>
+                </div>
+            </div>
+            <div class="col-xl-5 col-lg-6 offset-xl-1 mt-lg-0 mt-5 pt-lg-0 pt-5">
+                <h3 class="title-style">Why Choose EMSI Academy?</h3>
+                <p class="mt-4">At EMSI Academy, we empower aspiring designers and programmers to become industry leaders through cutting-edge courses, hands-on experience, and a creative community.</p>
+                <ul class="mt-4 list-style-lis pt-lg-1">
+                    <li><i class="fas fa-check-circle"></i>Tailored Design and Programming Courses</li>
+                    <li><i class="fas fa-check-circle"></i>Access to 100K+ Online Resources</li>
+                    <li><i class="fas fa-check-circle"></i>Industry-Recognized Certifications</li>
+                </ul>
+                <a href="contact.html" class="btn btn-style mt-5 disabled">Apply Now</a>
+
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //home image with content block -->
+<!-- courses section -->
+<div class="w3l-grids-block-5 home-course-bg py-5" id="courses">
+    <div class="container py-md-5 py-4">
+        <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:500px;">
+            <p class="text-uppercase">Best Courses</p>
+            <h3 class="title-style">Find The Right Course For You</h3>
+        </div>
+        <div class="row justify-content-center">
+            @if (Model.Courses != null && Model.Courses.Any())
+            {
+                foreach (var course in Model.Courses)
+                {
+                    <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="coursecard-single">
+                            <div class="grids5-info position-relative">
+                                <img src="@Url.Content("~/images/classrom.jpg")" alt="Course Image" class="img-fluid" />
+                                <div class="meta-list">
+                                    <span class="text-muted">@course.Name</span>
+                                </div>
+                            </div>
+                            <div class="content-main-top">
+                                <div class="content-top mb-4 mt-3">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-between">
+                                        <li><i class="fas fa-clock"></i> @course.Duration weeks</li>
+                                    </ul>
+                                </div>
+                                <h4><span class="text-muted">@course.Name</span></h4>
+                                <p>@course.Description</p>
+                                <div class="top-content-border d-flex align-items-center justify-content-between mt-4 pt-4">
+                                    <h6>Free</h6>
+                                    <span class="btn btn-style-primary disabled">Know Details <i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p>No courses available at the moment.</p>
+            }
+        </div>
+        <div class="text-center mt-sm-5 mt-4 pt-sm-0 pt-1">
+            <span class="btn btn-style btn-style-secondary disabled mt-sm-3">
+                Browse more courses
+            </span>
+        </div>
+    </div>
+</div>
+<!-- //courses section -->
+<!-- classes and subjects section -->
+<div class="w3l-grids-block-5 home-course-bg py-5" id="classes">
+    <div class="container py-md-5 py-4">
+        <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:500px;">
+            <p class="text-uppercase">School Classes</p>
+            <h3 class="title-style">Find The Classes and Their Subjects</h3>
+        </div>
+        <div class="row justify-content-center">
+            @if (Model.SchoolClasses != null && Model.SchoolClasses.Any())
+            {
+                foreach (var schoolClass in Model.SchoolClasses)
+                {
+                    <div class="col-lg-4 col-md-6 mt-4">
+                        <div class="coursecard-single">
+                            <div class="grids5-info position-relative">
+                                <img src="@Url.Content("~/images/subjects.jpg")" alt="Class Image" class="img-fluid scale-animation" />
+                                <div class="meta-list">
+                                    <span class="text-muted">@schoolClass.ClassName</span>
+                                </div>
+                            </div>
+                            <div class="content-main-top">
+                                <div class="content-top mb-4 mt-3">
+                                    <ul class="list-unstyled d-flex align-items-center justify-content-between">
+                                        <li><i class="fas fa-calendar-alt"></i> Start: @schoolClass.StartDate?.ToString("dd/MM/yyyy")</li>
+                                        <li><i class="fas fa-calendar-check"></i> End: @schoolClass.EndDate?.ToString("dd/MM/yyyy")</li>
+                                    </ul>
+                                </div>
+                                <h4><span class="text-muted">@schoolClass.ClassName</span></h4>
+                                <p>Subjects:</p>
+                                <ul>
+                                    @foreach (var subject in schoolClass.Subjects)
+                                    {
+                                        <li>@subject</li>
+                                    }
+                                </ul>
+                                <div class="top-content-border d-flex align-items-center justify-content-between mt-4 pt-4">
+                                    <h6>Active</h6>
+                                    <span class="btn btn-style-primary disabled">Class Details <i class="fas fa-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p>No school classes available at the moment.</p>
+            }
+        </div>
+        <div class="text-center mt-sm-5 mt-4 pt-sm-0 pt-1">
+            <span class="btn btn-style btn-style-secondary disabled mt-sm-3">
+                Browse more classes
+            </span>
+        </div>
+    </div>
+</div>
+<!-- //classes and subjects section -->
+<!-- why choose block -->
+<section class="w3l-service-1 py-5">
+    <div class="container py-md-5 py-4">
+        <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:500px;">
+            <p class="text-uppercase">Why Choose Us</p>
+            <h3 class="title-style">Empowering Designers and Developers</h3>
+        </div>
+        <div class="row content23-col-2 text-center">
+            <div class="col-md-6">
+                <div class="content23-grid content23-grid1">
+                    <h4>Expert Mentors</h4>
+                    <p>Guided by professionals with extensive experience in creative and tech industries.</p>
+                </div>
+            </div>
+            <div class="col-md-6 mt-md-0 mt-4">
+                <div class="content23-grid content23-grid2">
+                    <h4>Inspiring Learning Spaces</h4>
+                    <p>Our academy offers a modern, collaborative environment tailored to creativity and innovation.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //why choose block -->
+<!-- stats block -->
+<section class="w3-stats pt-4 pb-5" id="stats">
+    <div class="container pb-md-5 pb-4">
+        <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:500px;">
+            <p class="text-uppercase">Our Achievements</p>
+            <h3 class="title-style">Proudly Sharing Our Growth</h3>
+        </div>
+        <div class="row text-center pt-4">
+            <div class="col-md-3 col-6">
+                <div class="counter">
+                    <i class="fas fa-users fa-3x"></i>
+                    <div class="timer count-title count-number mt-sm-1" data-to="20000" data-speed="1500"></div>
+                    <p class="count-text">Creative Minds Enrolled</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6">
+                <div class="counter">
+                    <i class="fas fa-globe fa-3x"></i>
+                    <div class="timer count-title count-number mt-3" data-to="15" data-speed="1500"></div>
+                    <p class="count-text">Global Reach</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mt-md-0 mt-5">
+                <div class="counter">
+                    <i class="fas fa-chalkboard-teacher fa-3x"></i>
+                    <div class="timer count-title count-number mt-3" data-to="250" data-speed="1500"></div>
+                    <p class="count-text">Courses Offered</p>
+                </div>
+            </div>
+            <div class="col-md-3 col-6 mt-md-0 mt-5">
+                <div class="counter">
+                    <i class="fas fa-award fa-3x"></i>
+                    <div class="timer count-title count-number mt-3" data-to="100" data-speed="1500"></div>
+                    <p class="count-text">Industry Awards</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- //stats block -->
+<!-- testimonials block -->
+<section class="w3l-index4 py-5" id="testimonials">
+    <div class="container py-md-5 py-4">
+        <div class="content-slider text-center">
+            <div class="clients-slider">
+                <div class="mask">
+                    <ul>
+                        <li class="anim1">
+                            <img src="~/images/testi1.jpg" class="img-fluid rounded-circle" alt="client image" />
+                            <blockquote class="quote">
+                                <q>EMSI Academy transformed my journey into tech and design. The curriculum and mentorship provided here are unmatched!</q>
+                            </blockquote>
+                            <div class="source">- NIRI Houssam</div>
+                        </li>
+
+                        <li class="anim2">
+                            <img src="~/images/testi2.jpg" class="img-fluid rounded-circle" alt="client image" />
+                            <blockquote class="quote">
+                                <q>The projects and real-world challenges at EMSI Academy prepared me for the tech industry. It’s been a phenomenal experience!</q>
+                            </blockquote>
+                            <div class="source">- POUGHZAL ghali</div>
+                        </li>
+
+                        <li class="anim3">
+                            <img src="~/images/testi3.jpg" class="img-fluid rounded-circle" alt="client image" />
+                            <blockquote class="quote">
+                                <q>I’ve grown so much as a designer. The supportive community and skilled mentors at EMSI Academy made all the difference.</q>
+                            </blockquote>
+                            <div class="source">- YOUNESS Jounhi</div>
+                        </li>
+
+                        <li class="anim4">
+                            <img src="~/images/testi1.jpg" class="img-fluid rounded-circle" alt="client image" />
+                            <blockquote class="quote">
+                                <q>It’s not just a school – it’s a network of creators. DevArt Academy is where innovation and creativity thrive!</q>
+                            </blockquote>
+                            <div class="source">- LOUKILI KHALIL</div>
+                        </li>
+
+                        <li class="anim5">
+                            <img src="~/images/testi2.jpg" class="img-fluid rounded-circle" alt="client image" />
+                            <blockquote class="quote">
+                                <q>The skills and connections I gained here have been invaluable. My career in design took off thanks to DevArt Academy!</q>
+                            </blockquote>
+                            <div class="source">- EL DEFFRAOUI Mehdi </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- //testimonials block -->
+<!-- blog block -->
+<div class="w3l-blog-block-5 py-5" id="blog">
+    <div class="container py-md-5 py-4">
+        <div class="title-main text-center mx-auto mb-md-5 mb-4" style="max-width:500px;">
+            <p class="text-uppercase">Our News</p>
+            <h3 class="title-style">Latest <span>Insights</span> from DEMSI Academy</h3>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-card-single">
+                    <div class="grids5-info">
+                        <a href="#blog"><img src="~/images/blog2.jpg" alt="Education Programs" /></a>
+                        <div class="blog-info">
+                            <h4><a href="#blog">Innovative Education Programs...</a></h4>
+                            <p>Our programs blend technology and creativity to prepare students for impactful careers.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <a class="d-flex align-items-center" href="#blog" title="author">
+                                    <img class="img-fluid" src="~/images/testi2.jpg" alt="author" style="max-width:40px">
+                                    <span class="small ms-2">AGHFIR Imad</span>
+                                </a>
+                                <p class="date-text"><i class="far fa-calendar-alt me-1"></i>Oct 06, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-md-0 mt-4">
+                <div class="blog-card-single">
+                    <div class="grids5-info">
+                        <a href="#blog"><img src="~/images/blog1.jpg" alt="Games Programs" /></a>
+                        <div class="blog-info">
+                            <h4><a href="#blog">Exciting Game Design Courses...</a></h4>
+                            <p>Dive into interactive learning with our game design courses, perfect for budding developers.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <a class="d-flex align-items-center" href="#blog" title="author">
+                                    <img class="img-fluid" src="~/images/testi1.jpg" alt="author" style="max-width:40px">
+                                    <span class="small ms-2">CHAKIRI Fahd</span>
+                                </a>
+                                <p class="date-text"><i class="far fa-calendar-alt me-1"></i>Oct 10, 2025</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
+                <div class="blog-card-single">
+                    <div class="grids5-info">
+                        <a href="#blog"><img src="~/images/blog3.jpg" alt="Articles Programs" /></a>
+                        <div class="blog-info">
+                            <h4><a href="#blog">Insights and Industry Trends...</a></h4>
+                            <p>Stay updated with the latest trends in tech and design with articles from DevArt Academy.</p>
+                            <div class="d-flex align-items-center justify-content-between mt-4">
+                                <a class="d-flex align-items-center" href="#blog" title="author">
+                                    <img class="img-fluid" src="~/images/testi3.jpg" alt="author" style="max-width:40px">
+                                    <span class="small ms-2">EL hattab maria</span>
+                                </a>
+                                <p class="date-text"><i class="far fa-calendar-alt me-1"></i>Oct 12, 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- //blog block -->
+<!-- call block -->
+<section class="w3l-call-to-action-6">
+    <div class="container py-md-5 py-sm-4 py-5">
+        <div class="d-lg-flex align-items-center justify-content-between">
+            <div class="left-content-call">
+                <h3 class="title-big">Enroll Today!</h3>
+                <p class="text-white mt-1">Start your journey towards creative and technical success!</p>
+            </div>
+            <div class="right-content-call mt-lg-0 mt-4">
+                <ul class="buttons">
+                    <li class="phone-sec me-lg-4">
+                        <i class="fas fa-phone-volume"></i>
+                        <a class="call-style-w3" href="tel:+1(23) 456 789 0000">+212 772173346</a>
+                    </li>
+                    <li><span class="btn btn-style btn-style-2 mt-lg-0 mt-3 disabled">Join for Free</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- //call block -->

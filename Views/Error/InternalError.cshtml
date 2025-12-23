@@ -1,0 +1,11 @@
+﻿@model SchoolManagementSystem.Models.ErrorViewModel
+@{
+    Layout = "_ErrorLayout";
+    ViewBag.Title = "Internal Server Error";
+}
+
+    <h2>Oops! Something went wrong</h2>
+<div class="alert alert-danger">
+    <p>Sorry, an unexpected error has occurred. Please try again later.</p>
+    <p><strong>Error ID:</strong> @Model.RequestId</p>
+</div>

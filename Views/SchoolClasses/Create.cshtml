@@ -1,0 +1,64 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "SchoolClasses";
+    ViewBag.SubPageTitle = "Create";
+}
+
+@model SchoolManagementSystem.Models.SchoolClassViewModel
+
+@{
+    ViewData["Title"] = "Create School Class";
+}
+
+<h2>Create School Class</h2>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}
+
+<form id="createSchoolClassForm" asp-action="Create" method="post">
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <label asp-for="ClassName" class="form-label">Class Name <span class="text-danger">*</span></label>
+            <input asp-for="ClassName" class="form-control" required />
+            <span asp-validation-for="ClassName" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label asp-for="StartDate" class="form-label">Start Date</label>
+            <input asp-for="StartDate" class="form-control" type="date" />
+            <span asp-validation-for="StartDate" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="EndDate" class="form-label">End Date</label>
+            <input asp-for="EndDate" class="form-control" type="date" />
+            <span asp-validation-for="EndDate" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Create</button>
+        <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/formHelpers.js"></script>
+
+    <script>
+        // SweetAlert2 confirmation before submitting the form
+        setupSweetAlertOnSubmit("createSchoolClassForm", "School Class created successfully.");
+    </script>
+}

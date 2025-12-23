@@ -1,0 +1,139 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Employee";
+    ViewBag.SubPageTitle = "Create";
+}
+
+@model SchoolManagementSystem.Models.EmployeeViewModel
+
+@{
+    ViewData["Title"] = "Create Employee";
+}
+
+<h2>Create Employee</h2>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}
+
+<form id="createEmployeeForm" asp-action="Create" method="post" enctype="multipart/form-data">
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label asp-for="UserId" class="form-label">Pending User <span class="text-danger">*</span></label>
+            <select asp-for="UserId" class="form-select" asp-items="ViewBag.PendingUsers" id="pendingUserDropdown" required>
+                <option value="">Select Employee</option> <!-- Default option -->
+            </select>
+            <span asp-validation-for="UserId" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="Department" class="form-label">Department <span class="text-danger">*</span></label>
+            <select asp-for="Department" class="form-select" required>
+                <option value="">Select Department</option> <!-- Default option -->
+                @foreach (var department in Enum.GetValues(typeof(SchoolManagementSystem.Data.Entities.Department)).Cast<SchoolManagementSystem.Data.Entities.Department>())
+                {
+                    <option value="@department">@department</option>
+                }
+            </select>
+            <span asp-validation-for="Department" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label asp-for="Status" class="form-label">Status <span class="text-danger">*</span></label>
+            <select asp-for="Status" class="form-select" required>
+                <option value="">Select Status</option> <!-- Default option -->
+                @foreach (var status in Enum.GetValues(typeof(SchoolManagementSystem.Data.Entities.EmployeeStatus)).Cast<SchoolManagementSystem.Data.Entities.EmployeeStatus>())
+                {
+                    <option value="@status">@status</option>
+                }
+            </select>
+            <span asp-validation-for="Status" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="AcademicDegree" class="form-label">Academic Degree</label>
+            <select asp-for="AcademicDegree" class="form-select" asp-items="Html.GetEnumSelectList<SchoolManagementSystem.Data.Entities.AcademicDegree>()">
+                <option value="">Select Degree</option> <!-- Default option -->
+            </select>
+            <span asp-validation-for="AcademicDegree" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label asp-for="FirstName" class="form-label">First Name <span class="text-danger">*</span></label>
+            <input asp-for="FirstName" class="form-control" required />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="LastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+            <input asp-for="LastName" class="form-control" required />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label asp-for="HireDate" class="form-label">Hire Date <span class="text-danger">*</span></label>
+            <input asp-for="HireDate" type="date" class="form-control" required />
+            <span asp-validation-for="HireDate" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="PhoneNumber" class="form-label">Phone Number</label>
+            <input asp-for="PhoneNumber" class="form-control" />
+            <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label asp-for="ImageFile" class="form-label">Image</label>
+            <input asp-for="ImageFile" type="file" class="form-control" id="imageUpload" />
+            <span asp-validation-for="ImageFile" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label>Image Preview</label>
+            <img id="imagePreview" src="@Model.ImageFullPath" alt="Image Preview" style="max-width: 150px; max-height: 150px; border-radius: 10px;" />
+        </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Create Employee</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/formHelpers.js"></script>
+
+    <script>
+        document.getElementById("pendingUserDropdown").addEventListener("change", function () {
+            const selectedUserId = this.value;
+            const pendingUsers = @Html.Raw(Json.Serialize(Model.PendingUsers));
+
+            const selectedUser = pendingUsers.find(user => user.id === selectedUserId);
+            if (selectedUser) {
+                document.getElementById("FirstName").value = selectedUser.firstName;
+                document.getElementById("LastName").value = selectedUser.lastName;
+                document.getElementById("PhoneNumber").value = selectedUser.phoneNumber;
+                
+            } else {
+                document.getElementById("FirstName").value = '';
+                document.getElementById("LastName").value = '';
+                document.getElementById("PhoneNumber").value = '';
+            }
+        });
+
+        // Preview the uploaded image
+        setupImageUploadPreview("imageUpload", "imagePreview");
+
+        // SweetAlert2 confirmation before submitting the form
+        setupSweetAlertOnSubmit("createEmployeeForm", "Employee created successfully.");
+    </script>
+}

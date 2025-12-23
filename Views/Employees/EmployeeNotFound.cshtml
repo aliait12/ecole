@@ -1,0 +1,16 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Employee";
+    ViewBag.SubPageTitle = "EmployeeNotFound";
+}
+
+@{
+    ViewData["Title"] = "Employee Not Found";
+}
+
+<h2>Employee Not Found</h2>
+
+<div class="alert alert-warning">
+    <p>Sorry, the employee you are looking for could not be found.</p>
+    <a href="@Url.Action("Index", "Employees")" class="btn btn-primary">Back to Employee List</a>
+</div>

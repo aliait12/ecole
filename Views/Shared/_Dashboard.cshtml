@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - School Management System</title>
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/SchoolManagementSystem.styles.css" asp-append-version="true" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="@Url.Content("~/images/favicon.ico")" type="image/x-icon">
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Template CSS Style link -->
+    <link rel="stylesheet" href="~/css/style-starter.css" asp-append-version="true">
+
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="@Url.Content("~/dashboard/css/dashboard.css")?v=@Guid.NewGuid()">
+
+    <!-- Dark Mode CSS -->
+    <link rel="stylesheet" href="@Url.Content("~/dashboard/css/dark-mode.css")?v=@Guid.NewGuid()">
+
+    <!-- Animate.css for Animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+
+    <!-- Syncfusion -->
+    <link href="https://cdn.syncfusion.com/ej2/material.css" rel="stylesheet" />
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <partial name="_Navbar" />
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <img src="@Url.Content("~/images/EMSI.png")" alt="DevArt Academy Logo" loading="lazy">
+        </div>
+        <ul class="sidebar-menu">
+            <!-- Home -->
+            <li><a href="/Home/Index" aria-label="Home"><i class="fas fa-home me-2"></i>Home</a></li>
+            
+            <!-- Account -->
+            @if (User.IsInRole("Admin"))
+            {
+                <li><a href="/Account/Register" aria-label="Register Account"><i class="fas fa-user-plus me-2"></i>Register</a></li>
+            }
+
+
+            <!-- Courses, Subjects and classes -->
+            @if (User.IsInRole("Admin") || User.IsInRole("Employee"))
+            {
+                <li>
+                    <a href="/Courses/Index" aria-label="Courses" data-toggle="submenu"><i class="fas fa-book me-2"></i>Courses</a>
+                    <ul class="submenu">
+                        <li><a href="/Courses/Index" aria-label="View Courses">View Courses</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/Subjects/Index" aria-label="Subjects" data-toggle="submenu"><i class="fas fa-book-open me-2"></i>Subjects</a>
+                    <ul class="submenu">
+                        <li><a href="/Subjects/Index" aria-label="View Subjects">View Subjects</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/SchoolClasses/Index" aria-label="School Classes" data-toggle="submenu"><i class="fas fa-school me-2"></i>School Classes</a>
+                    <ul class="submenu">
+                        <li><a href="/SchoolClasses/Index" aria-label="View Classes">View Classes</a></li>
+                    </ul>
+                </li>
+            }
+
+            <!-- Students Grades and Attendance-->
+            @if (User.IsInRole("Employee") || User.IsInRole("Admin"))
+            {
+                <li>
+                    <a href="/Students/Index" aria-label="Students" data-toggle="submenu"><i class="fas fa-user-graduate me-2"></i>Students</a>
+                    <ul class="submenu">
+                        <li><a href="/Students/Index" aria-label="View Students">View Students</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/Grades/Index" aria-label="Grades" data-toggle="submenu"><i class="fas fa-graduation-cap me-2"></i>Grades</a>
+                    <ul class="submenu">
+                        <li><a href="/Grades/Index" aria-label="View Grades">View Grades</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="/Attendance/Index" aria-label="Attendance" data-toggle="submenu"><i class="fas fa-calendar-check me-2"></i> Attendance</a>
+                    <ul class="submenu">
+                        <li><a href="/Attendance/Index" aria-label="View Attendance">View Attendance</a></li>
+                    </ul>
+                </li>
+            }
+
+            <!-- Student grades and absences -->
+            @if (User.IsInRole("Student"))
+            {
+                <li>
+                    <a href="/Grades/MyGrades" aria-label="My Grades"><i class="fas fa-book-reader me-2"></i>My Grades</a>
+                </li>
+                <li>
+                    <a href="/Attendance/MyAttendances" aria-label="My Attendances"><i class="fas fa-book-reader me-2"></i>My Attendances</a>
+                </li>
+            }
+
+            @if (User.IsInRole("Admin"))
+            {
+                <li>
+                    <a href="/Employees/Index" aria-label="Employees" data-toggle="submenu"><i class="fas fa-user-tie me-2"></i>Employees</a>
+                    <ul class="submenu">
+                        <li><a href="/Employees/Index" aria-label="View Employees">View Employees</a></li>
+                    </ul>
+                </li>
+            }
+
+
+            <!-- Teachers -->
+            @if (User.IsInRole("Employee") || User.IsInRole("Admin"))
+            {
+                <li>
+                    <a href="/Teachers/Index" aria-label="Teachers" data-toggle="submenu"><i class="fas fa-chalkboard-teacher me-2"></i>Teachers</a>
+                    <ul class="submenu">
+                        <li><a href="/Teachers/Index" aria-label="View Teachers">View Teachers</a></li>
+                    </ul>
+                </li>
+            }
+
+
+            <!-- Alerts -->
+            @if (User.IsInRole("Employee"))
+            {
+                <li><a href="@Url.Action("Create", "Alert")"><i class="fas fa-exclamation-circle me-2"></i>Create Alert</a></li>
+                <li><a href="@Url.Action("ViewAlerts", "Alert")"><i class="fas fa-exclamation-triangle me-2"></i>View Alerts</a></li>
+            }
+
+            @if (User.IsInRole("Admin"))
+            {
+                <li><a href="@Url.Action("UnresolvedAlerts", "Alert")" aria-label="Manage Alerts"><i class="fas fa-exclamation-triangle me-2"></i>Manage Alerts</a></li>
+            }
+
+    </aside>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+
+@*         <!-- Topbar -->
+        <div class="topbar">
+            <div class="user-profile">
+                <img src="@Url.Content("~/images/profile.png")" alt="Profile Picture of @User.Identity.Name" loading="lazy">
+                <span>@User.Identity.Name</span>
+            </div>
+            <div class="notifications">
+                <i class="fas fa-bell"></i>
+                <span class="badge">3</span> 
+                <form action="/Account/Logout" method="post">
+                    <button class="logout-btn" type="submit">Logout</button>
+                </form>
+            </div>
+        </div> *@
+
+        <!-- Breadcrumb -->
+        <nav class="breadcrumb">
+            @{
+                string dashboardLink = "";
+                if (User.IsInRole("Admin"))
+                {
+                    dashboardLink = Url.Action("AdminDashboard", "Dashboard");
+                }
+                else if (User.IsInRole("Employee"))
+                {
+                    dashboardLink = Url.Action("EmployeeDashboard", "Dashboard");
+                }
+                else if (User.IsInRole("Teacher"))
+                {
+                    dashboardLink = Url.Action("TeacherDashboard", "Dashboard");
+                }
+                else if (User.IsInRole("Student"))
+                {
+                    dashboardLink = Url.Action("StudentDashboard", "Dashboard");
+                }
+                else
+                {
+                    dashboardLink = Url.Action("Index", "Home");
+                }
+            }
+            <a href="@dashboardLink">Dashboard</a>
+
+            @if (ViewBag.PageTitle != null)
+            {
+                <span> / @ViewBag.PageTitle</span>
+            }
+            @if (ViewBag.SubPageTitle != null)
+            {
+                <span> / @ViewBag.SubPageTitle</span>
+            }
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            @RenderBody()
+        </main>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.syncfusion.com/ej2/dist/ej2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+    <script src="@Url.Content("~/dashboard/js/dashboard.js")?v=@Guid.NewGuid()"></script>
+    @RenderSection("Scripts", required: false)
+
+
+</body>
+</html>

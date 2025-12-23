@@ -1,0 +1,135 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Employee";
+    ViewBag.SubPageTitle = "Index";
+}
+
+@using Newtonsoft.Json
+@model IEnumerable<SchoolManagementSystem.Data.Entities.Employee>
+
+@{
+    ViewData["Title"] = "Employees List";
+
+
+    var jsonSerializerSettings = new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
+                Formatting = Formatting.Indented 
+            };
+
+    var serializedData = JsonConvert.SerializeObject(Model, jsonSerializerSettings);
+}
+
+<h2>Employees</h2>
+
+<div>
+    <a asp-action="Create" class="btn btn-success mb-3">Create Employee</a>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">No employees found.</div>
+}
+else
+{
+    <div id="Grid"></div>
+}
+
+@section Scripts {
+    <script id="profilePictureTemplate" type="text/x-template">
+        <img src="${ImageFullPath}" alt="Profile Picture" style="width: 50px; height: 50px; border-radius: 50%;" />
+    </script>
+
+    <script id="actionTemplate" type="text/x-template">
+        <a href="/Employees/Edit/${Id}" class="btn btn-warning">Edit</a>
+        <a href="/Employees/Delete/${Id}" class="btn btn-danger">Delete</a>
+        <a href="/Employees/Details/${Id}" class="btn btn-primary">Details</a>
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var serializedData = @Html.Raw(serializedData); 
+
+
+            serializedData.forEach(function (employee) {
+                switch (employee.Status) {
+                    case 0: // Assuming Pending is 0
+                        employee.StatusText = "Pending";
+                        break;
+                    case 1: // Assuming Active is 1
+                        employee.StatusText = "Active";
+                        break;
+                    case 2: // Assuming Inactive is 2
+                        employee.StatusText = "Inactive";
+                        break;
+                }
+
+ 
+                switch (employee.Department) {
+                    case 0: // Assuming Administration is 0
+                        employee.DepartmentText = "Administration";
+                        break;
+                    case 1: // Assuming Human Resources is 1
+                        employee.DepartmentText = "Human Resources";
+                        break;
+                    case 2: // Assuming Finance is 2
+                        employee.DepartmentText = "Finance";
+                        break;
+                    case 3: // Assuming IT is 3
+                        employee.DepartmentText = "IT";
+                        break;
+                    case 4: // Assuming Maintenance is 4
+                        employee.DepartmentText = "Maintenance";
+                        break;
+                    case 5: // Assuming Teaching Support is 5
+                        employee.DepartmentText = "Teaching Support";
+                        break;
+                    case 6: // Assuming Security is 6
+                        employee.DepartmentText = "Security";
+                        break;
+                    case 7: // Assuming Library is 7
+                        employee.DepartmentText = "Library";
+                        break;
+                }
+            });
+
+            var grid = new ej.grids.Grid({
+                dataSource: serializedData,
+                allowPaging: true,            
+                allowSorting: true,           
+                allowFiltering: true,         
+                allowGrouping: true,          
+                filterSettings: { type: 'Menu' }, 
+                pageSettings: { pageSize: 10 },
+                toolbar: ['Search'],          
+                groupSettings: { showGroupedColumn: true }, 
+                columns: [
+                    {
+                        field: "ImageFullPath",
+                        headerText: "Profile Picture",
+                        width: 100,
+                        textAlign: "Center",
+                        template: "#profilePictureTemplate"
+                    },
+                    { field: "FirstName", headerText: "First Name", width: 120 },
+                    { field: "LastName", headerText: "Last Name", width: 120 },
+                    {
+                        field: "FormattedHireDate", 
+                        headerText: "Hire Date",
+                        width: 150
+                    },
+                    { field: "StatusText", headerText: "Status", width: 100 },
+                    { field: "DepartmentText", headerText: "Department", width: 150 }, 
+                    {
+                        headerText: "Actions",
+                        width: 180,
+                        textAlign: "Center",
+                        template: "#actionTemplate"
+                    }
+                ]
+            });
+
+            grid.appendTo("#Grid"); 
+        });
+    </script>
+}

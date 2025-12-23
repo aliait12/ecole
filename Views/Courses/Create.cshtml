@@ -1,0 +1,87 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Courses";
+    ViewBag.SubPageTitle = "Create";
+}
+
+@model CourseViewModel
+
+@{
+    ViewData["Title"] = "Create Course";
+}
+
+<h2>Create Course</h2>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}
+
+<form id="createCourseForm" asp-action="Create" method="post">
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label asp-for="Name" class="form-label">Course Name <span class="text-danger">*</span></label>
+            <input asp-for="Name" class="form-control" required />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="col-md-6">
+            <label asp-for="Duration" class="form-label">Duration (in months) <span class="text-danger">*</span></label>
+            <input asp-for="Duration" class="form-control" required />
+            <span asp-validation-for="Duration" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-12">
+            <label asp-for="Description" class="form-label">Description</label>
+            <textarea asp-for="Description" class="form-control"></textarea>
+            <span asp-validation-for="Description" class="text-danger"></span>
+        </div>
+    </div>
+
+    <h4>Classes</h4>
+    <div class="row">
+        @foreach (var item in Model.SchoolClassItems)
+        {
+            <div class="col-md-4">
+                <div class="form-check">
+                    <input type="checkbox" name="SelectedSchoolClassIds" value="@item.Value" class="form-check-input" @(item.Selected ? "checked" : "") />
+                    <label class="form-check-label">@item.Text</label>
+                </div>
+            </div>
+        }
+    </div>
+
+    <h4>Subjects</h4>
+    <div class="row">
+        @foreach (var item in Model.SubjectItems)
+        {
+            <div class="col-md-4">
+                <div class="form-check">
+                    <input type="checkbox" name="SelectedSubjectIds" value="@item.Value" class="form-check-input" @(item.Selected ? "checked" : "") />
+                    <label class="form-check-label">@item.Text</label>
+                </div>
+            </div>
+        }
+    </div>
+
+    <button type="submit" class="btn btn-primary mt-3">Save</button>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/formHelpers.js"></script>
+
+    <script>
+        // SweetAlert2 confirmation before submitting the form
+        setupSweetAlertOnSubmit("createCourseForm", "Course created successfully.");
+    </script>
+}

@@ -1,0 +1,60 @@
+﻿body.error-page {
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url('/images/errorbg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.error-container {
+    text-align: center;
+    max-width: 600px;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.error-icon {
+    width: 80px;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.alert {
+    font-size: 1rem;
+    color: #555;
+    background-color: #f9f9f9;
+    border: none;
+}
+
+.btn-primary {
+    background-color: #4f46e5;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+    .btn-primary:hover {
+        background-color: #3730a3;
+        color: #fff;
+    }
+
+.error-icon {
+    font-size: 80px; 
+    margin-bottom: 1.5rem;
+    color: #ff4d4d; 
+}

@@ -1,0 +1,78 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "SchoolClasses";
+    ViewBag.SubPageTitle = "Index";
+}
+
+@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "SchoolClasses";
+}
+
+@using Newtonsoft.Json
+@model IEnumerable<SchoolManagementSystem.Models.SchoolClassViewModel>
+
+@{
+    ViewData["Title"] = "School Classes";
+
+    var jsonSerializerSettings = new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
+                Formatting = Formatting.Indented
+            };
+
+    var serializedData = JsonConvert.SerializeObject(Model, jsonSerializerSettings);
+}
+
+<h2>School Classes</h2>
+
+<div>
+    <a asp-action="Create" class="btn btn-success mb-3">Create New School Class</a>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">No school classes found.</div>
+}
+else
+{
+    <div id="Grid"></div>
+}
+
+@section Scripts {
+    <script id="actionTemplate" type="text/x-template">
+        <a href="/SchoolClasses/Edit/${Id}" class="btn btn-warning">Edit</a>
+        <a href="/SchoolClasses/Delete/${Id}" class="btn btn-danger">Delete</a>
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var serializedData = @Html.Raw(serializedData);
+
+            var grid = new ej.grids.Grid({
+                dataSource: serializedData,
+                allowPaging: true,
+                allowSorting: true,
+                allowFiltering: true,
+                allowGrouping: true,
+                filterSettings: { type: 'Menu' },
+                pageSettings: { pageSize: 10 },
+                toolbar: ['Search'],
+                groupSettings: { showGroupedColumn: true },
+                columns: [
+                    { field: "ClassName", headerText: "Class Name", width: 200 },
+                    { field: "StartDate", headerText: "Start Date", width: 150, type: "date", format: "yMd" }, // Adicionado
+                    { field: "EndDate", headerText: "End Date", width: 150, type: "date", format: "yMd" }, // Adicionado
+                    { 
+                        headerText: "Actions",
+                        width: 180,
+                        textAlign: "Center",
+                        template: "#actionTemplate"
+                    }
+                ]
+            });
+
+            grid.appendTo("#Grid");
+        });
+    </script>
+}

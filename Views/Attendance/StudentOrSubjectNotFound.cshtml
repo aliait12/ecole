@@ -1,0 +1,16 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Attendance";
+    ViewBag.SubPageTitle = "StudentOrSubjectNotFound";
+}
+
+@{
+    ViewData["Title"] = "Student Or Subject Not Found";
+}
+
+<h2>Student Or Subject  Not Found</h2>
+
+<div class="alert alert-warning">
+    <p>Sorry, the Student Or Subject you are looking for could not be found.</p>
+    <a href="@Url.Action("Index", "Attendance")" class="btn btn-primary">Back to Attendance List</a>
+</div>

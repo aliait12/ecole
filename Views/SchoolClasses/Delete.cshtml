@@ -1,0 +1,43 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "SchoolClasses";
+    ViewBag.SubPageTitle = "Delete";
+}
+
+@model SchoolManagementSystem.Models.SchoolClassViewModel
+
+@{
+    ViewData["Title"] = "Delete School Class";
+}
+
+<div class="container mt-4">
+    <h2 class="text-danger">Delete School Class</h2>
+
+    <h3>Are you sure you want to delete this school class?</h3>
+    <div class="card mb-3 shadow">
+        <div class="card-body">
+            <h5>Class Name: @Model.ClassName</h5>
+            <strong>Start Date:</strong> @Model.StartDate?.ToString("dd/MM/yyyy")<br />
+            <strong>End Date:</strong> @Model.EndDate?.ToString("dd/MM/yyyy")<br />
+        </div>
+    </div>
+
+    <form id="deleteForm" asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <div class="mb-3">
+            <button type="button" class="btn btn-danger" id="confirmDelete">
+                <i class="fas fa-trash-alt"></i> Delete
+            </button>
+            <a asp-action="Index" class="btn btn-secondary">
+                <i class="fas fa-times"></i> Back to List
+            </a>
+        </div>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="~/js/formHelpers.js"></script>
+    <script>
+        setupSweetAlertOnDelete("confirmDelete", "deleteForm", "You won't be able to revert this!");
+    </script>
+}

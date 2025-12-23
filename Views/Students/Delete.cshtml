@@ -1,0 +1,55 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Students";
+    ViewBag.SubPageTitle = "Delete";
+}
+
+@model SchoolManagementSystem.Models.StudentViewModel
+
+@{
+    ViewData["Title"] = "Delete Student";
+}
+
+<div class="container mt-4">
+    <h2 class="text-danger">Delete Student</h2>
+
+    <h3>Are you sure you want to delete this?</h3>
+
+    <div class="card mb-3 shadow">
+        <div class="card-body d-flex align-items-center">
+            <img src="@Model.ImageFullPath" alt="Profile Picture" class="rounded-circle me-3" style="width: 100px; height: 100px;" />
+            <div>
+                <h5 class="card-title">@Model.FirstName @Model.LastName</h5>
+                <div class="form-group mb-2">
+                    <label>Enrollment Date:</label>
+                    <p class="mb-0">@Model.EnrollmentDate?.ToString("d")</p>
+                </div>
+                <div class="form-group mb-2">
+                    <label>Status:</label>
+                    <p class="mb-0">@Model.Status</p>
+                </div>
+                <div class="form-group mb-2">
+                    <label>School Class:</label>
+                    <p class="mb-0">@Model.SchoolClass?.ClassName</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <form id="deleteForm" asp-action="Delete" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="button" class="btn btn-danger" id="confirmDelete">
+            <i class="fas fa-trash-alt"></i> Delete
+        </button>
+        <a asp-action="Index" class="btn btn-secondary">
+            <i class="fas fa-times"></i> Cancel
+        </a>
+    </form>
+</div>
+
+@section Scripts {
+    <script src="~/js/formHelpers.js"></script> 
+    <script>
+        setupSweetAlertOnDelete("confirmDelete", "deleteForm", "You won't be able to revert this!"); 
+    </script>
+}

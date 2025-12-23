@@ -1,0 +1,739 @@
+2025-12-19T17:37:47.4307401+01:00  [INF] User profile is available. Using '"C:\Users\PC\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest. (7ac5e29c)
+2025-12-19T17:37:49.7215898+01:00  [INF] Executed DbCommand ("94"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-12-19T17:37:49.8306884+01:00  [INF] Executed DbCommand ("9"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-12-19T17:37:49.8375297+01:00  [INF] Executed DbCommand ("5"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-12-19T17:37:49.8432591+01:00  [INF] Executed DbCommand ("5"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-12-19T17:37:49.8511290+01:00  [INF] Executed DbCommand ("7"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-12-19T17:37:49.8578089+01:00  [INF] Executed DbCommand ("5"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-12-19T17:37:49.8843469+01:00  [INF] Executed DbCommand ("9"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-12-19T17:37:49.9670003+01:00  [INF] Executed DbCommand ("6"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-12-19T17:37:49.9759262+01:00  [INF] Executed DbCommand ("7"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-12-19T17:37:49.9853664+01:00  [INF] Executed DbCommand ("8"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-12-19T17:37:49.9874357+01:00  [INF] Executed DbCommand ("1"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-12-19T17:37:50.0149096+01:00  [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [SchoolClasses] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-12-19T17:37:50.0317097+01:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate]
+FROM [SchoolClasses] AS [s]
+WHERE [s].[ClassName] = N'Class A'" (0723d8ff)
+2025-12-19T17:37:50.0829020+01:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate]
+FROM [SchoolClasses] AS [s]
+WHERE [s].[ClassName] = N'Class B'" (0723d8ff)
+2025-12-19T17:37:50.0948967+01:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Subjects] AS [s]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-12-19T17:37:50.1159921+01:00  [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Credits], [s].[Description], [s].[Name], [s].[TotalClasses]
+FROM [Subjects] AS [s]
+WHERE [s].[Name] = N'Algebra'" (0723d8ff)
+2025-12-19T17:37:50.1439492+01:00  [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [s].[Id], [s].[Credits], [s].[Description], [s].[Name], [s].[TotalClasses]
+FROM [Subjects] AS [s]
+WHERE [s].[Name] = N'Physics'" (0723d8ff)
+2025-12-19T17:37:50.1561786+01:00  [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Courses] AS [c]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-12-19T17:37:50.1684808+01:00  [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Teachers] AS [t]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-12-19T17:37:50.1777693+01:00  [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT CASE
+    WHEN EXISTS (
+        SELECT 1
+        FROM [Employees] AS [e]) THEN CAST(1 AS bit)
+    ELSE CAST(0 AS bit)
+END" (0723d8ff)
+2025-12-19T17:37:50.9191269+01:00  [INF] Now listening on: "https://localhost:58514" (d826f4b8)
+2025-12-19T17:37:50.9192541+01:00  [INF] Now listening on: "http://localhost:58515" (d826f4b8)
+2025-12-19T17:37:51.1447502+01:00  [INF] Application started. Press Ctrl+C to shut down. (dcaefe54)
+2025-12-19T17:37:51.1455631+01:00  [INF] Hosting environment: "Development" (bc5a1a4e)
+2025-12-19T17:37:51.1456465+01:00  [INF] Content root path: "C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem" (cc26f24e)
+2025-12-19T17:37:51.5911207+01:00 0HNHV3JPN956J:00000001 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/""" - null null (d509f86a)
+2025-12-19T17:37:51.9299265+01:00 0HNHV3JPN956J:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__p_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[Id] = @__p_0" (0723d8ff)
+2025-12-19T17:37:51.9946784+01:00 0HNHV3JPN956J:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=["@__user_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[ClaimType], [a].[ClaimValue], [a].[UserId]
+FROM [AspNetUserClaims] AS [a]
+WHERE [a].[UserId] = @__user_Id_0" (0723d8ff)
+2025-12-19T17:37:52.0423590+01:00 0HNHV3JPN956J:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__userId_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a0].[Name]
+FROM [AspNetUserRoles] AS [a]
+INNER JOIN [AspNetRoles] AS [a0] ON [a].[RoleId] = [a0].[Id]
+WHERE [a].[UserId] = @__userId_0" (0723d8ff)
+2025-12-19T17:37:52.0522062+01:00 0HNHV3JPN956J:00000001 [INF] Executed DbCommand ("7"ms) [Parameters=["@__normalizedName_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [a].[Id], [a].[ConcurrencyStamp], [a].[Name], [a].[NormalizedName]
+FROM [AspNetRoles] AS [a]
+WHERE [a].[NormalizedName] = @__normalizedName_0" (0723d8ff)
+2025-12-19T17:37:52.0685415+01:00 0HNHV3JPN956J:00000001 [INF] Executed DbCommand ("6"ms) [Parameters=["@__role_Id_0='?' (Size = 450)"], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[ClaimType], [a].[ClaimValue]
+FROM [AspNetRoleClaims] AS [a]
+WHERE [a].[RoleId] = @__role_Id_0" (0723d8ff)
+2025-12-19T17:37:52.0866161+01:00 0HNHV3JPN956J:00000001 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (500cc934)
+2025-12-19T17:37:52.1119648+01:00 0HNHV3JPN956J:00000001 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "SchoolManagementSystem.Controllers.HomeController" ("SchoolManagementSystem"). (122b2fdf)
+2025-12-19T17:37:52.2252021+01:00 0HNHV3JPN956J:00000001 [WRN] Compiling a query which loads related collections for more than one collection navigation, either via 'Include' or through projection, but no 'QuerySplittingBehavior' has been configured. By default, Entity Framework will use 'QuerySplittingBehavior.SingleQuery', which can potentially result in slow query performance. See https://go.microsoft.com/fwlink/?linkid=2134277 for more information. To identify the query that's triggering this warning call 'ConfigureWarnings(w => w.Throw(RelationalEventId.MultipleCollectionIncludeWarning))'. (4c53259e)
+2025-12-19T17:37:52.2725765+01:00 0HNHV3JPN956J:00000001 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [Courses] AS [c]
+LEFT JOIN [SchoolClasses] AS [s] ON [c].[Id] = [s].[CourseId]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [c].[Id], [s].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-12-19T17:37:52.4141324+01:00 0HNHV3JPN956J:00000001 [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [SchoolClasses] AS [s]
+LEFT JOIN [Courses] AS [c] ON [s].[CourseId] = [c].[Id]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [s].[Id], [c].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-12-19T17:37:52.4463081+01:00 0HNHV3JPN956J:00000001 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2025-12-19T17:37:52.6952896+01:00 0HNHV3JPN956J:00000001 [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:37:52.9038536+01:00 0HNHV3JPN956J:00000007 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/images/banner.png""" - null null (d509f86a)
+2025-12-19T17:37:52.9040343+01:00 0HNHV3JPN956J:00000005 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/css/style-starter.css""?v=ouIp8-9RclautY3JShNKPEDUsZT6PTjXL0iQlPCEvUk" - null null (d509f86a)
+2025-12-19T17:37:52.9038674+01:00 0HNHV3JPN956J:00000003 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/images/logo.png""" - null null (d509f86a)
+2025-12-19T17:37:52.9244888+01:00 0HNHV3JPN956J:00000005 [INF] The file "/css/style-starter.css" was not modified (f1f8d725)
+2025-12-19T17:37:52.9244880+01:00 0HNHV3JPN956J:00000003 [INF] The file "/images/logo.png" was not modified (f1f8d725)
+2025-12-19T17:37:52.9244818+01:00 0HNHV3JPN956J:00000007 [INF] The file "/images/banner.png" was not modified (f1f8d725)
+2025-12-19T17:37:52.9275672+01:00 0HNHV3JPN956J:00000007 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/images/banner.png""" - 304 null "image/png" 23.7139ms (74253ad3)
+2025-12-19T17:37:52.9275642+01:00 0HNHV3JPN956J:00000003 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/images/logo.png""" - 304 null "image/png" 23.7055ms (74253ad3)
+2025-12-19T17:37:52.9275643+01:00 0HNHV3JPN956J:00000005 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/css/style-starter.css""?v=ouIp8-9RclautY3JShNKPEDUsZT6PTjXL0iQlPCEvUk" - 304 null "text/css" 23.2613ms (74253ad3)
+2025-12-19T17:37:52.9292697+01:00 0HNHV3JPN956J:00000001 [INF] Executed ViewResult - view "Index" executed in 486.8576ms. (f66409e9)
+2025-12-19T17:37:52.9350636+01:00 0HNHV3JPN956J:00000001 [INF] Executed action "SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)" in 821.8107ms (afa2e885)
+2025-12-19T17:37:52.9358999+01:00 0HNHV3JPN956J:00000001 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (99874f2b)
+2025-12-19T17:37:52.9464961+01:00 0HNHV3JPN956J:00000001 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/""" - 200 null "text/html; charset=utf-8" 1370.5547ms (74253ad3)
+2025-12-19T17:37:52.9998822+01:00 0HNHV3JPN956J:00000009 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/images/classrom.jpg""" - null null (d509f86a)
+2025-12-19T17:37:53.0006228+01:00 0HNHV3JPN956J:0000000D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/images/subjects.jpg""" - null null (d509f86a)
+2025-12-19T17:37:53.0006229+01:00 0HNHV3JPN956J:0000000B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/images/img1.jpg""" - null null (d509f86a)
+2025-12-19T17:37:53.0013815+01:00 0HNHV3JPN956J:0000000B [INF] The file "/images/img1.jpg" was not modified (f1f8d725)
+2025-12-19T17:37:53.0013810+01:00 0HNHV3JPN956J:00000009 [INF] The file "/images/classrom.jpg" was not modified (f1f8d725)
+2025-12-19T17:37:53.0013814+01:00 0HNHV3JPN956J:0000000D [INF] The file "/images/subjects.jpg" was not modified (f1f8d725)
+2025-12-19T17:37:53.0016115+01:00 0HNHV3JPN956J:0000000D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/images/subjects.jpg""" - 304 null "image/jpeg" 1.1272ms (74253ad3)
+2025-12-19T17:37:53.0016268+01:00 0HNHV3JPN956J:00000009 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/images/classrom.jpg""" - 304 null "image/jpeg" 1.845ms (74253ad3)
+2025-12-19T17:37:53.0017356+01:00 0HNHV3JPN956J:0000000B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/images/img1.jpg""" - 304 null "image/jpeg" 1.2338ms (74253ad3)
+2025-12-19T17:37:53.1941193+01:00 0HNHV3JPN956J:0000000F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-19T17:37:53.1941190+01:00 0HNHV3JPN956J:00000013 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/images/testi3.jpg""" - null null (d509f86a)
+2025-12-19T17:37:53.1941301+01:00 0HNHV3JPN956J:00000011 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/images/testi2.jpg""" - null null (d509f86a)
+2025-12-19T17:37:53.1947421+01:00 0HNHV3JPN956J:00000011 [INF] The file "/images/testi2.jpg" was not modified (f1f8d725)
+2025-12-19T17:37:53.1947421+01:00 0HNHV3JPN956J:00000013 [INF] The file "/images/testi3.jpg" was not modified (f1f8d725)
+2025-12-19T17:37:53.1949812+01:00 0HNHV3JPN956J:00000013 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/images/testi3.jpg""" - 304 null "image/jpeg" 1.0707ms (74253ad3)
+2025-12-19T17:37:53.1951984+01:00 0HNHV3JPN956J:00000015 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/images/testi1.jpg""" - null null (d509f86a)
+2025-12-19T17:37:53.1955306+01:00 0HNHV3JPN956J:00000015 [INF] The file "/images/testi1.jpg" was not modified (f1f8d725)
+2025-12-19T17:37:53.1956930+01:00 0HNHV3JPN956J:00000015 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/images/testi1.jpg""" - 304 null "image/jpeg" 0.5338ms (74253ad3)
+2025-12-19T17:37:53.1949778+01:00 0HNHV3JPN956J:00000011 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/images/testi2.jpg""" - 304 null "image/jpeg" 0.9165ms (74253ad3)
+2025-12-19T17:37:53.1959067+01:00 0HNHV3JPN956J:00000017 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/images/blog3.jpg""" - null null (d509f86a)
+2025-12-19T17:37:53.1960418+01:00 0HNHV3JPN956J:00000019 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-19T17:37:53.1961664+01:00 0HNHV3JPN956J:00000017 [INF] The file "/images/blog3.jpg" was not modified (f1f8d725)
+2025-12-19T17:37:53.1962976+01:00 0HNHV3JPN956J:00000017 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/images/blog3.jpg""" - 304 null "image/jpeg" 0.4313ms (74253ad3)
+2025-12-19T17:37:53.1964267+01:00 0HNHV3JPN956J:0000001B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/images/banner.jpg""" - null null (d509f86a)
+2025-12-19T17:37:53.1966661+01:00 0HNHV3JPN956J:0000001B [INF] The file "/images/banner.jpg" was not modified (f1f8d725)
+2025-12-19T17:37:53.1968172+01:00 0HNHV3JPN956J:0000001B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/images/banner.jpg""" - 304 null "image/jpeg" 0.3893ms (74253ad3)
+2025-12-19T17:37:53.1969511+01:00 0HNHV3JPN956J:0000001D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/images/bg1.jpg""" - null null (d509f86a)
+2025-12-19T17:37:53.1971970+01:00 0HNHV3JPN956J:0000001D [INF] The file "/images/bg1.jpg" was not modified (f1f8d725)
+2025-12-19T17:37:53.2019233+01:00 0HNHV3JPN956J:0000001D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/images/bg1.jpg""" - 304 null "image/jpeg" 4.8681ms (74253ad3)
+2025-12-19T17:37:53.2022187+01:00 0HNHV3JPN956J:0000001F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/images/bg2.jpg""" - null null (d509f86a)
+2025-12-19T17:37:53.2028219+01:00 0HNHV3JPN956J:0000001F [INF] The file "/images/bg2.jpg" was not modified (f1f8d725)
+2025-12-19T17:37:53.2030610+01:00 0HNHV3JPN956J:0000001F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/images/bg2.jpg""" - 304 null "image/jpeg" 0.8645ms (74253ad3)
+2025-12-19T17:37:53.2032815+01:00 0HNHV3JPN956J:00000021 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/images/blog2.jpg""" - null null (d509f86a)
+2025-12-19T17:37:53.2035988+01:00 0HNHV3JPN956J:00000021 [INF] The file "/images/blog2.jpg" was not modified (f1f8d725)
+2025-12-19T17:37:53.2037459+01:00 0HNHV3JPN956J:00000021 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/images/blog2.jpg""" - 304 null "image/jpeg" 0.5136ms (74253ad3)
+2025-12-19T17:37:53.2039110+01:00 0HNHV3JPN956J:00000023 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/images/bg3.jpg""" - null null (d509f86a)
+2025-12-19T17:37:53.2042396+01:00 0HNHV3JPN956J:00000023 [INF] The file "/images/bg3.jpg" was not modified (f1f8d725)
+2025-12-19T17:37:53.2044159+01:00 0HNHV3JPN956J:00000023 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/images/bg3.jpg""" - 304 null "image/jpeg" 0.503ms (74253ad3)
+2025-12-19T17:37:53.2045733+01:00 0HNHV3JPN956J:00000025 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/images/blog1.jpg""" - null null (d509f86a)
+2025-12-19T17:37:53.2053362+01:00 0HNHV3JPN956J:00000025 [INF] The file "/images/blog1.jpg" was not modified (f1f8d725)
+2025-12-19T17:37:53.2055251+01:00 0HNHV3JPN956J:00000025 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/images/blog1.jpg""" - 304 null "image/jpeg" 0.9632ms (74253ad3)
+2025-12-19T17:37:53.2079717+01:00 0HNHV3JPN956J:0000000F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 14.0203ms (74253ad3)
+2025-12-19T17:37:53.3230175+01:00 0HNHV3JPN956J:00000029 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/webfonts/fa-regular-400.woff2""" - null null (d509f86a)
+2025-12-19T17:37:53.3231052+01:00 0HNHV3JPN956J:00000027 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/webfonts/fa-solid-900.woff2""" - null null (d509f86a)
+2025-12-19T17:37:53.3235808+01:00 0HNHV3JPN956J:00000029 [INF] The file "/webfonts/fa-regular-400.woff2" was not modified (f1f8d725)
+2025-12-19T17:37:53.3236082+01:00 0HNHV3JPN956J:00000027 [INF] The file "/webfonts/fa-solid-900.woff2" was not modified (f1f8d725)
+2025-12-19T17:37:53.3237974+01:00 0HNHV3JPN956J:00000027 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/webfonts/fa-solid-900.woff2""" - 304 null "font/woff2" 4.2192ms (74253ad3)
+2025-12-19T17:37:53.3238006+01:00 0HNHV3JPN956J:00000029 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/webfonts/fa-regular-400.woff2""" - 304 null "font/woff2" 4.2178ms (74253ad3)
+2025-12-19T17:37:53.3623412+01:00 0HNHV3JPN956J:00000019 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 166.1583ms (74253ad3)
+2025-12-19T17:38:01.1351227+01:00 0HNHV3JPN956J:0000002B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/Account/ChangeUser""" - null null (d509f86a)
+2025-12-19T17:38:01.1672255+01:00 0HNHV3JPN956J:0000002B [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AccountController.ChangeUser (SchoolManagementSystem)"' (500cc934)
+2025-12-19T17:38:01.1800353+01:00 0HNHV3JPN956J:0000002B [INF] Route matched with "{action = \"ChangeUser\", controller = \"Account\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] ChangeUser()" on controller "SchoolManagementSystem.Controllers.AccountController" ("SchoolManagementSystem"). (122b2fdf)
+2025-12-19T17:38:01.2229598+01:00 0HNHV3JPN956J:0000002B [INF] Executed DbCommand ("8"ms) [Parameters=["@__normalizedEmail_0='?' (Size = 256)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(2) [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+WHERE [a].[NormalizedEmail] = @__normalizedEmail_0" (0723d8ff)
+2025-12-19T17:38:01.2281771+01:00 0HNHV3JPN956J:0000002B [INF] Executing ViewResult, running view "ChangeUser". (c83d0e25)
+2025-12-19T17:38:01.4234943+01:00 0HNHV3JPN956J:0000002B [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:38:01.4491981+01:00 0HNHV3JPN956J:0000002B [INF] Executed ViewResult - view "ChangeUser" executed in 222.7974ms. (f66409e9)
+2025-12-19T17:38:01.4501381+01:00 0HNHV3JPN956J:0000002B [INF] Executed action "SchoolManagementSystem.Controllers.AccountController.ChangeUser (SchoolManagementSystem)" in 269.9005ms (afa2e885)
+2025-12-19T17:38:01.4502450+01:00 0HNHV3JPN956J:0000002B [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AccountController.ChangeUser (SchoolManagementSystem)"' (99874f2b)
+2025-12-19T17:38:01.4509938+01:00 0HNHV3JPN956J:0000002B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/Account/ChangeUser""" - 200 null "text/html; charset=utf-8" 316.0911ms (74253ad3)
+2025-12-19T17:38:01.5002662+01:00 0HNHV3JPN956J:0000002D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/lib/bootstrap/dist/css/bootstrap.min.css""" - null null (d509f86a)
+2025-12-19T17:38:01.5017570+01:00 0HNHV3JPN956J:0000002F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/css/style-account.css""?v=gFRdxPU70ASRLMBw07stDcT2HBOhvS3EZad-9y4pRyo" - null null (d509f86a)
+2025-12-19T17:38:01.5020599+01:00 0HNHV3JPN956J:0000002D [INF] The file "/lib/bootstrap/dist/css/bootstrap.min.css" was not modified (f1f8d725)
+2025-12-19T17:38:01.5022734+01:00 0HNHV3JPN956J:0000002D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/lib/bootstrap/dist/css/bootstrap.min.css""" - 304 null "text/css" 2.4268ms (74253ad3)
+2025-12-19T17:38:01.5023716+01:00 0HNHV3JPN956J:0000002F [INF] The file "/css/style-account.css" was not modified (f1f8d725)
+2025-12-19T17:38:01.5032929+01:00 0HNHV3JPN956J:0000002F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/css/style-account.css""?v=gFRdxPU70ASRLMBw07stDcT2HBOhvS3EZad-9y4pRyo" - 304 null "text/css" 2.235ms (74253ad3)
+2025-12-19T17:38:01.5128088+01:00 0HNHV3JPN956J:00000031 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/lib/jquery/dist/jquery.min.js""" - null null (d509f86a)
+2025-12-19T17:38:01.5133693+01:00 0HNHV3JPN956J:00000031 [INF] The file "/lib/jquery/dist/jquery.min.js" was not modified (f1f8d725)
+2025-12-19T17:38:01.5134439+01:00 0HNHV3JPN956J:00000033 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/lib/bootstrap/dist/js/bootstrap.bundle.min.js""" - null null (d509f86a)
+2025-12-19T17:38:01.5135861+01:00 0HNHV3JPN956J:00000031 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/lib/jquery/dist/jquery.min.js""" - 304 null "text/javascript" 2.3346ms (74253ad3)
+2025-12-19T17:38:01.5140670+01:00 0HNHV3JPN956J:00000033 [INF] The file "/lib/bootstrap/dist/js/bootstrap.bundle.min.js" was not modified (f1f8d725)
+2025-12-19T17:38:01.5144401+01:00 0HNHV3JPN956J:00000033 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/lib/bootstrap/dist/js/bootstrap.bundle.min.js""" - 304 null "text/javascript" 2.2038ms (74253ad3)
+2025-12-19T17:38:01.5300358+01:00 0HNHV3JPN956J:00000035 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/lib/jquery-validation/dist/jquery.validate.min.js""" - null null (d509f86a)
+2025-12-19T17:38:01.5305375+01:00 0HNHV3JPN956J:00000035 [INF] The file "/lib/jquery-validation/dist/jquery.validate.min.js" was not modified (f1f8d725)
+2025-12-19T17:38:01.5308293+01:00 0HNHV3JPN956J:00000035 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/lib/jquery-validation/dist/jquery.validate.min.js""" - 304 null "text/javascript" 1.3185ms (74253ad3)
+2025-12-19T17:38:01.5340738+01:00 0HNHV3JPN956J:00000037 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-19T17:38:01.5356838+01:00 0HNHV3JPN956J:00000037 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 1.8914ms (74253ad3)
+2025-12-19T17:38:01.5359822+01:00 0HNHV3JPN956J:00000039 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js""" - null null (d509f86a)
+2025-12-19T17:38:01.5373121+01:00 0HNHV3JPN956J:00000039 [INF] The file "/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" was not modified (f1f8d725)
+2025-12-19T17:38:01.5379302+01:00 0HNHV3JPN956J:00000039 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js""" - 304 null "text/javascript" 1.8119ms (74253ad3)
+2025-12-19T17:38:01.5379067+01:00 0HNHV3JPN956J:0000003B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-19T17:38:01.5426485+01:00 0HNHV3JPN956J:0000003D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/images/bgback.jpg""" - null null (d509f86a)
+2025-12-19T17:38:01.5434442+01:00 0HNHV3JPN956J:0000003D [INF] The file "/images/bgback.jpg" was not modified (f1f8d725)
+2025-12-19T17:38:01.5437244+01:00 0HNHV3JPN956J:0000003D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/images/bgback.jpg""" - 304 null "image/jpeg" 1.4892ms (74253ad3)
+2025-12-19T17:38:01.5645588+01:00 0HNHV3JPN956J:0000003B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 27.3717ms (74253ad3)
+2025-12-19T17:38:04.6152332+01:00 0HNHV3JPN956J:0000003F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/Dashboard/AdminDashboard""" - null null (d509f86a)
+2025-12-19T17:38:04.6655887+01:00 0HNHV3JPN956J:0000003F [INF] Executing endpoint '"SchoolManagementSystem.Controllers.DashboardController.AdminDashboard (SchoolManagementSystem)"' (500cc934)
+2025-12-19T17:38:04.6722178+01:00 0HNHV3JPN956J:0000003F [INF] Route matched with "{action = \"AdminDashboard\", controller = \"Dashboard\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminDashboard()" on controller "SchoolManagementSystem.Controllers.DashboardController" ("SchoolManagementSystem"). (122b2fdf)
+2025-12-19T17:38:04.6763043+01:00 0HNHV3JPN956J:0000003F [INF] Executing ViewResult, running view "AdminDashboard". (c83d0e25)
+2025-12-19T17:38:04.8053126+01:00 0HNHV3JPN956J:0000003F [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:38:04.8315440+01:00 0HNHV3JPN956J:0000003F [INF] Executed ViewResult - view "AdminDashboard" executed in 156.8814ms. (f66409e9)
+2025-12-19T17:38:04.8322178+01:00 0HNHV3JPN956J:0000003F [INF] Executed action "SchoolManagementSystem.Controllers.DashboardController.AdminDashboard (SchoolManagementSystem)" in 159.8671ms (afa2e885)
+2025-12-19T17:38:04.8324043+01:00 0HNHV3JPN956J:0000003F [INF] Executed endpoint '"SchoolManagementSystem.Controllers.DashboardController.AdminDashboard (SchoolManagementSystem)"' (99874f2b)
+2025-12-19T17:38:04.8331167+01:00 0HNHV3JPN956J:0000003F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/Dashboard/AdminDashboard""" - 200 null "text/html; charset=utf-8" 217.7355ms (74253ad3)
+2025-12-19T17:38:04.8779080+01:00 0HNHV3JPN956J:00000041 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/css/site.css""?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0" - null null (d509f86a)
+2025-12-19T17:38:04.8784761+01:00 0HNHV3JPN956J:00000041 [INF] The file "/css/site.css" was not modified (f1f8d725)
+2025-12-19T17:38:04.8786892+01:00 0HNHV3JPN956J:00000041 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/css/site.css""?v=pAGv4ietcJNk_EwsQZ5BN9-K4MuNYS2a9wl4Jw-q9D0" - 304 null "text/css" 1.096ms (74253ad3)
+2025-12-19T17:38:04.8813239+01:00 0HNHV3JPN956J:00000043 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=edb6362c-945a-4377-8c53-6cc8edfa7224" - null null (d509f86a)
+2025-12-19T17:38:04.8835401+01:00 0HNHV3JPN956J:00000045 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=001e3754-7a35-470a-b840-84352503d061" - null null (d509f86a)
+2025-12-19T17:38:04.8852545+01:00 0HNHV3JPN956J:00000049 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=f2121478-73d2-4581-8d7a-63d2f0e328f7" - null null (d509f86a)
+2025-12-19T17:38:04.8852545+01:00 0HNHV3JPN956J:00000047 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/SchoolManagementSystem.styles.css""?v=TP7v5oiKkfSBygfBJVUgA-1L-xWKkPeyGnwTCJIOWzg" - null null (d509f86a)
+2025-12-19T17:38:04.8854114+01:00 0HNHV3JPN956J:0000004B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-19T17:38:04.8862794+01:00 0HNHV3JPN956J:00000047 [INF] The file "/SchoolManagementSystem.styles.css" was not modified (f1f8d725)
+2025-12-19T17:38:04.8864269+01:00 0HNHV3JPN956J:00000047 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/SchoolManagementSystem.styles.css""?v=TP7v5oiKkfSBygfBJVUgA-1L-xWKkPeyGnwTCJIOWzg" - 304 null "text/css" 1.2241ms (74253ad3)
+2025-12-19T17:38:04.8865732+01:00 0HNHV3JPN956J:0000004B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 1.3516ms (74253ad3)
+2025-12-19T17:38:04.9038754+01:00 0HNHV3JPN956J:0000004D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-19T17:38:04.9703823+01:00 0HNHV3JPN956J:0000004D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 66.7324ms (74253ad3)
+2025-12-19T17:38:04.9887720+01:00 0HNHV3JPN956J:00000043 [INF] Sending file. Request path: '"/dashboard/css/dashboard.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dashboard.css"' (27b0a520)
+2025-12-19T17:38:04.9888740+01:00 0HNHV3JPN956J:00000045 [INF] Sending file. Request path: '"/dashboard/css/dark-mode.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dark-mode.css"' (27b0a520)
+2025-12-19T17:38:04.9890249+01:00 0HNHV3JPN956J:00000043 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=edb6362c-945a-4377-8c53-6cc8edfa7224" - 200 5679 "text/css" 108.169ms (74253ad3)
+2025-12-19T17:38:04.9892147+01:00 0HNHV3JPN956J:00000045 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=001e3754-7a35-470a-b840-84352503d061" - 200 924 "text/css" 106.8428ms (74253ad3)
+2025-12-19T17:38:05.0018218+01:00 0HNHV3JPN956J:00000049 [INF] Sending file. Request path: '"/dashboard/js/dashboard.js"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\js\dashboard.js"' (27b0a520)
+2025-12-19T17:38:05.0023414+01:00 0HNHV3JPN956J:00000049 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=f2121478-73d2-4581-8d7a-63d2f0e328f7" - 200 3539 "text/javascript" 117.0484ms (74253ad3)
+2025-12-19T17:38:09.0740945+01:00 0HNHV3JPN956J:0000004F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/Subjects/Index""" - null null (d509f86a)
+2025-12-19T17:38:09.0846349+01:00 0HNHV3JPN956J:0000004F [INF] Executing endpoint '"SchoolManagementSystem.Controllers.SubjectsController.Index (SchoolManagementSystem)"' (500cc934)
+2025-12-19T17:38:09.0933056+01:00 0HNHV3JPN956J:0000004F [INF] Route matched with "{action = \"Index\", controller = \"Subjects\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "SchoolManagementSystem.Controllers.SubjectsController" ("SchoolManagementSystem"). (122b2fdf)
+2025-12-19T17:38:09.1266277+01:00 0HNHV3JPN956J:0000004F [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Credits], [s].[Description], [s].[Name], [s].[TotalClasses]
+FROM [Subjects] AS [s]" (0723d8ff)
+2025-12-19T17:38:09.1363494+01:00 0HNHV3JPN956J:0000004F [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2025-12-19T17:38:09.3991144+01:00 0HNHV3JPN956J:0000004F [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:38:09.4084955+01:00 0HNHV3JPN956J:0000004F [INF] Executed ViewResult - view "Index" executed in 276.2456ms. (f66409e9)
+2025-12-19T17:38:09.4089011+01:00 0HNHV3JPN956J:0000004F [INF] Executed action "SchoolManagementSystem.Controllers.SubjectsController.Index (SchoolManagementSystem)" in 315.2897ms (afa2e885)
+2025-12-19T17:38:09.4089493+01:00 0HNHV3JPN956J:0000004F [INF] Executed endpoint '"SchoolManagementSystem.Controllers.SubjectsController.Index (SchoolManagementSystem)"' (99874f2b)
+2025-12-19T17:38:09.4094557+01:00 0HNHV3JPN956J:0000004F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/Subjects/Index""" - 200 null "text/html; charset=utf-8" 335.2623ms (74253ad3)
+2025-12-19T17:38:09.4664077+01:00 0HNHV3JPN956J:00000053 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=5f5ea2e2-11e5-46d6-b5c3-8739aab42695" - null null (d509f86a)
+2025-12-19T17:38:09.4663989+01:00 0HNHV3JPN956J:00000051 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=16661e95-ee92-4d65-8d0f-a7eab2b6092d" - null null (d509f86a)
+2025-12-19T17:38:09.4691098+01:00 0HNHV3JPN956J:00000055 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=dce1d6f7-8946-4729-8113-e1654ee486ad" - null null (d509f86a)
+2025-12-19T17:38:09.4691334+01:00 0HNHV3JPN956J:00000057 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-19T17:38:09.4728196+01:00 0HNHV3JPN956J:00000053 [INF] Sending file. Request path: '"/dashboard/css/dark-mode.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dark-mode.css"' (27b0a520)
+2025-12-19T17:38:09.4752876+01:00 0HNHV3JPN956J:00000053 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=5f5ea2e2-11e5-46d6-b5c3-8739aab42695" - 200 924 "text/css" 8.3605ms (74253ad3)
+2025-12-19T17:38:09.4755277+01:00 0HNHV3JPN956J:00000057 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 6.5879ms (74253ad3)
+2025-12-19T17:38:09.4763765+01:00 0HNHV3JPN956J:00000051 [INF] Sending file. Request path: '"/dashboard/css/dashboard.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dashboard.css"' (27b0a520)
+2025-12-19T17:38:09.4765926+01:00 0HNHV3JPN956J:00000055 [INF] Sending file. Request path: '"/dashboard/js/dashboard.js"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\js\dashboard.js"' (27b0a520)
+2025-12-19T17:38:09.4766054+01:00 0HNHV3JPN956J:00000051 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=16661e95-ee92-4d65-8d0f-a7eab2b6092d" - 200 5679 "text/css" 10.3097ms (74253ad3)
+2025-12-19T17:38:09.4767541+01:00 0HNHV3JPN956J:00000055 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=dce1d6f7-8946-4729-8113-e1654ee486ad" - 200 3539 "text/javascript" 8.0165ms (74253ad3)
+2025-12-19T17:38:09.5414534+01:00 0HNHV3JPN956J:00000059 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-19T17:38:09.5652657+01:00 0HNHV3JPN956J:00000059 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 24.5244ms (74253ad3)
+2025-12-19T17:38:23.2152850+01:00 0HNHV3JPN956J:0000005B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/Employees/Index""" - null null (d509f86a)
+2025-12-19T17:38:23.2236775+01:00 0HNHV3JPN956J:0000005B [INF] Executing endpoint '"SchoolManagementSystem.Controllers.EmployeesController.Index (SchoolManagementSystem)"' (500cc934)
+2025-12-19T17:38:23.2316622+01:00 0HNHV3JPN956J:0000005B [INF] Route matched with "{action = \"Index\", controller = \"Employees\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "SchoolManagementSystem.Controllers.EmployeesController" ("SchoolManagementSystem"). (122b2fdf)
+2025-12-19T17:38:23.2746364+01:00 0HNHV3JPN956J:0000005B [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId], [a].[Id], [a].[AccessFailedCount], [a].[Address], [a].[ConcurrencyStamp], [a].[DateCreated], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[LastLogin], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[ProfilePictureId], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [Employees] AS [e]
+INNER JOIN [AspNetUsers] AS [a] ON [e].[UserId] = [a].[Id]" (0723d8ff)
+2025-12-19T17:38:23.3547439+01:00 0HNHV3JPN956J:0000005B [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2025-12-19T17:38:23.4278475+01:00 0HNHV3JPN956J:0000005B [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:38:23.4363859+01:00 0HNHV3JPN956J:0000005B [INF] Executed ViewResult - view "Index" executed in 84.4007ms. (f66409e9)
+2025-12-19T17:38:23.4368762+01:00 0HNHV3JPN956J:0000005B [INF] Executed action "SchoolManagementSystem.Controllers.EmployeesController.Index (SchoolManagementSystem)" in 205.088ms (afa2e885)
+2025-12-19T17:38:23.4370299+01:00 0HNHV3JPN956J:0000005B [INF] Executed endpoint '"SchoolManagementSystem.Controllers.EmployeesController.Index (SchoolManagementSystem)"' (99874f2b)
+2025-12-19T17:38:23.4375509+01:00 0HNHV3JPN956J:0000005B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/Employees/Index""" - 200 null "text/html; charset=utf-8" 223.4215ms (74253ad3)
+2025-12-19T17:38:23.4774111+01:00 0HNHV3JPN956J:0000005D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=aea93dcc-b010-4032-aaab-a7aaeb614349" - null null (d509f86a)
+2025-12-19T17:38:23.4808551+01:00 0HNHV3JPN956J:00000061 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=76fb5487-c0f1-435a-86fc-3acc3a63d59c" - null null (d509f86a)
+2025-12-19T17:38:23.4811658+01:00 0HNHV3JPN956J:0000005F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=f7a691cd-6e70-4920-9b0b-158c6d20b7a4" - null null (d509f86a)
+2025-12-19T17:38:23.4830796+01:00 0HNHV3JPN956J:0000005F [INF] Sending file. Request path: '"/dashboard/css/dark-mode.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dark-mode.css"' (27b0a520)
+2025-12-19T17:38:23.4838390+01:00 0HNHV3JPN956J:0000005F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=f7a691cd-6e70-4920-9b0b-158c6d20b7a4" - 200 924 "text/css" 3.2737ms (74253ad3)
+2025-12-19T17:38:23.4843257+01:00 0HNHV3JPN956J:00000063 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-19T17:38:23.4841638+01:00 0HNHV3JPN956J:0000005D [INF] Sending file. Request path: '"/dashboard/css/dashboard.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dashboard.css"' (27b0a520)
+2025-12-19T17:38:23.4871847+01:00 0HNHV3JPN956J:00000061 [INF] Sending file. Request path: '"/dashboard/js/dashboard.js"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\js\dashboard.js"' (27b0a520)
+2025-12-19T17:38:23.4880557+01:00 0HNHV3JPN956J:00000061 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=76fb5487-c0f1-435a-86fc-3acc3a63d59c" - 200 3539 "text/javascript" 7.9095ms (74253ad3)
+2025-12-19T17:38:23.4878180+01:00 0HNHV3JPN956J:00000063 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 5.7838ms (74253ad3)
+2025-12-19T17:38:23.4878175+01:00 0HNHV3JPN956J:0000005D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=aea93dcc-b010-4032-aaab-a7aaeb614349" - 200 5679 "text/css" 8.1065ms (74253ad3)
+2025-12-19T17:38:23.5097936+01:00 0HNHV3JPN956J:00000065 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-19T17:38:23.5304738+01:00 0HNHV3JPN956J:00000065 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 21.4888ms (74253ad3)
+2025-12-19T17:38:29.5003844+01:00 0HNHV3JPN956J:00000067 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/Employees/Delete/2""" - null null (d509f86a)
+2025-12-19T17:38:29.5126940+01:00 0HNHV3JPN956J:00000067 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.EmployeesController.Delete (SchoolManagementSystem)"' (500cc934)
+2025-12-19T17:38:29.5344144+01:00 0HNHV3JPN956J:00000067 [INF] Route matched with "{action = \"Delete\", controller = \"Employees\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Nullable`1[System.Int32])" on controller "SchoolManagementSystem.Controllers.EmployeesController" ("SchoolManagementSystem"). (122b2fdf)
+2025-12-19T17:38:29.5941144+01:00 0HNHV3JPN956J:00000067 [INF] Executed DbCommand ("8"ms) [Parameters=["@__id_0='?' (DbType = Int32)"], CommandType='Text', CommandTimeout='30']"
+""SELECT TOP(1) [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Employees] AS [e]
+WHERE [e].[Id] = @__id_0" (0723d8ff)
+2025-12-19T17:38:29.6013984+01:00 0HNHV3JPN956J:00000067 [INF] Executing ViewResult, running view "Delete". (c83d0e25)
+2025-12-19T17:38:29.6583358+01:00 0HNHV3JPN956J:00000067 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:38:29.6652855+01:00 0HNHV3JPN956J:00000067 [INF] Executed ViewResult - view "Delete" executed in 66.0397ms. (f66409e9)
+2025-12-19T17:38:29.6663297+01:00 0HNHV3JPN956J:00000067 [INF] Executed action "SchoolManagementSystem.Controllers.EmployeesController.Delete (SchoolManagementSystem)" in 131.8013ms (afa2e885)
+2025-12-19T17:38:29.6663821+01:00 0HNHV3JPN956J:00000067 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.EmployeesController.Delete (SchoolManagementSystem)"' (99874f2b)
+2025-12-19T17:38:29.6676598+01:00 0HNHV3JPN956J:00000067 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/Employees/Delete/2""" - 200 null "text/html; charset=utf-8" 167.0383ms (74253ad3)
+2025-12-19T17:38:29.7086707+01:00 0HNHV3JPN956J:00000069 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=1c29605a-014a-4f03-9ffd-3ac163c218e6" - null null (d509f86a)
+2025-12-19T17:38:29.7121727+01:00 0HNHV3JPN956J:00000069 [INF] Sending file. Request path: '"/dashboard/css/dashboard.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dashboard.css"' (27b0a520)
+2025-12-19T17:38:29.7123246+01:00 0HNHV3JPN956J:00000069 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=1c29605a-014a-4f03-9ffd-3ac163c218e6" - 200 5679 "text/css" 4.8369ms (74253ad3)
+2025-12-19T17:38:29.7176085+01:00 0HNHV3JPN956J:0000006D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=e022dd1d-9d72-4b8c-b9bd-b39cd265bad2" - null null (d509f86a)
+2025-12-19T17:38:29.7227913+01:00 0HNHV3JPN956J:0000006B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=4f74338c-7e1e-498e-86cb-34fe2733650a" - null null (d509f86a)
+2025-12-19T17:38:29.7233116+01:00 0HNHV3JPN956J:0000006D [INF] Sending file. Request path: '"/dashboard/js/dashboard.js"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\js\dashboard.js"' (27b0a520)
+2025-12-19T17:38:29.7270420+01:00 0HNHV3JPN956J:0000006D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=e022dd1d-9d72-4b8c-b9bd-b39cd265bad2" - 200 3539 "text/javascript" 6.1818ms (74253ad3)
+2025-12-19T17:38:29.7271336+01:00 0HNHV3JPN956J:0000006B [INF] Sending file. Request path: '"/dashboard/css/dark-mode.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dark-mode.css"' (27b0a520)
+2025-12-19T17:38:29.7272844+01:00 0HNHV3JPN956J:0000006B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=4f74338c-7e1e-498e-86cb-34fe2733650a" - 200 924 "text/css" 11.0248ms (74253ad3)
+2025-12-19T17:38:29.7413701+01:00 0HNHV3JPN956J:0000006F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-19T17:38:29.7422548+01:00 0HNHV3JPN956J:00000071 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/js/formHelpers.js""" - null null (d509f86a)
+2025-12-19T17:38:29.7440625+01:00 0HNHV3JPN956J:0000006F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 3.485ms (74253ad3)
+2025-12-19T17:38:29.7441782+01:00 0HNHV3JPN956J:00000073 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-19T17:38:29.7702219+01:00 0HNHV3JPN956J:00000073 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 26.5381ms (74253ad3)
+2025-12-19T17:38:29.7746897+01:00 0HNHV3JPN956J:00000071 [INF] The file "/js/formHelpers.js" was not modified (f1f8d725)
+2025-12-19T17:38:29.7748628+01:00 0HNHV3JPN956J:00000071 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/js/formHelpers.js""" - 304 null "text/javascript" 32.6099ms (74253ad3)
+2025-12-19T17:38:39.7666818+01:00 0HNHV3JPN956J:00000075 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/Alert/UnresolvedAlerts""" - null null (d509f86a)
+2025-12-19T17:38:39.7738231+01:00 0HNHV3JPN956J:00000075 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AlertController.UnresolvedAlerts (SchoolManagementSystem)"' (500cc934)
+2025-12-19T17:38:39.7838663+01:00 0HNHV3JPN956J:00000075 [INF] Route matched with "{action = \"UnresolvedAlerts\", controller = \"Alert\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UnresolvedAlerts()" on controller "SchoolManagementSystem.Controllers.AlertController" ("SchoolManagementSystem"). (122b2fdf)
+2025-12-19T17:38:39.8010770+01:00 0HNHV3JPN956J:00000075 [INF] Executed DbCommand ("11"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:38:39.8047341+01:00 0HNHV3JPN956J:00000075 [INF] Executing ViewResult, running view "UnresolvedAlerts". (c83d0e25)
+2025-12-19T17:38:39.8341841+01:00 0HNHV3JPN956J:00000075 [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:38:39.8437262+01:00 0HNHV3JPN956J:00000075 [INF] Executed ViewResult - view "UnresolvedAlerts" executed in 40.5084ms. (f66409e9)
+2025-12-19T17:38:39.8440428+01:00 0HNHV3JPN956J:00000075 [INF] Executed action "SchoolManagementSystem.Controllers.AlertController.UnresolvedAlerts (SchoolManagementSystem)" in 59.737ms (afa2e885)
+2025-12-19T17:38:39.8441366+01:00 0HNHV3JPN956J:00000075 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AlertController.UnresolvedAlerts (SchoolManagementSystem)"' (99874f2b)
+2025-12-19T17:38:39.8444569+01:00 0HNHV3JPN956J:00000075 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/Alert/UnresolvedAlerts""" - 200 null "text/html; charset=utf-8" 79.748ms (74253ad3)
+2025-12-19T17:38:39.8891437+01:00 0HNHV3JPN956J:00000077 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=15c1f314-8fca-4283-9832-bddc1a811281" - null null (d509f86a)
+2025-12-19T17:38:39.8948184+01:00 0HNHV3JPN956J:00000079 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=c967022c-a866-457d-ae86-09bac2bb886f" - null null (d509f86a)
+2025-12-19T17:38:39.8948023+01:00 0HNHV3JPN956J:0000007D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-19T17:38:39.8984073+01:00 0HNHV3JPN956J:0000007B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=2c64cb2f-d3b8-4559-810d-f7c9c10debee" - null null (d509f86a)
+2025-12-19T17:38:39.8985105+01:00 0HNHV3JPN956J:00000077 [INF] Sending file. Request path: '"/dashboard/css/dashboard.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dashboard.css"' (27b0a520)
+2025-12-19T17:38:39.8987283+01:00 0HNHV3JPN956J:00000077 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=15c1f314-8fca-4283-9832-bddc1a811281" - 200 5679 "text/css" 10.0823ms (74253ad3)
+2025-12-19T17:38:39.8989424+01:00 0HNHV3JPN956J:0000007D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 4.7925ms (74253ad3)
+2025-12-19T17:38:39.9022014+01:00 0HNHV3JPN956J:0000007B [INF] Sending file. Request path: '"/dashboard/js/dashboard.js"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\js\dashboard.js"' (27b0a520)
+2025-12-19T17:38:39.9023555+01:00 0HNHV3JPN956J:0000007B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=2c64cb2f-d3b8-4559-810d-f7c9c10debee" - 200 3539 "text/javascript" 8.3762ms (74253ad3)
+2025-12-19T17:38:39.9038438+01:00 0HNHV3JPN956J:00000079 [INF] Sending file. Request path: '"/dashboard/css/dark-mode.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dark-mode.css"' (27b0a520)
+2025-12-19T17:38:39.9042814+01:00 0HNHV3JPN956J:00000079 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=c967022c-a866-457d-ae86-09bac2bb886f" - 200 924 "text/css" 10.115ms (74253ad3)
+2025-12-19T17:38:39.9462203+01:00 0HNHV3JPN956J:0000007F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-19T17:38:39.9609806+01:00 0HNHV3JPN956J:0000007F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 15.4235ms (74253ad3)
+2025-12-19T17:38:45.5504445+01:00 0HNHV3JPN956J:00000081 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/Courses/Index""" - null null (d509f86a)
+2025-12-19T17:38:45.5566598+01:00 0HNHV3JPN956J:00000081 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.CoursesController.Index (SchoolManagementSystem)"' (500cc934)
+2025-12-19T17:38:45.5660415+01:00 0HNHV3JPN956J:00000081 [INF] Route matched with "{action = \"Index\", controller = \"Courses\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "SchoolManagementSystem.Controllers.CoursesController" ("SchoolManagementSystem"). (122b2fdf)
+2025-12-19T17:38:45.5892648+01:00 0HNHV3JPN956J:00000081 [INF] Executed DbCommand ("17"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [Courses] AS [c]
+LEFT JOIN [SchoolClasses] AS [s] ON [c].[Id] = [s].[CourseId]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [c].[Id], [s].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-12-19T17:38:45.5954161+01:00 0HNHV3JPN956J:00000081 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2025-12-19T17:38:45.6411069+01:00 0HNHV3JPN956J:00000081 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:38:45.6484254+01:00 0HNHV3JPN956J:00000081 [INF] Executed ViewResult - view "Index" executed in 54.9898ms. (f66409e9)
+2025-12-19T17:38:45.6497293+01:00 0HNHV3JPN956J:00000081 [INF] Executed action "SchoolManagementSystem.Controllers.CoursesController.Index (SchoolManagementSystem)" in 83.4633ms (afa2e885)
+2025-12-19T17:38:45.6498128+01:00 0HNHV3JPN956J:00000081 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.CoursesController.Index (SchoolManagementSystem)"' (99874f2b)
+2025-12-19T17:38:45.6501386+01:00 0HNHV3JPN956J:00000081 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/Courses/Index""" - 200 null "text/html; charset=utf-8" 100.7423ms (74253ad3)
+2025-12-19T17:38:45.6874599+01:00 0HNHV3JPN956J:00000083 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=70bcf81a-ed82-46cc-9192-7c5d7dfda5c3" - null null (d509f86a)
+2025-12-19T17:38:45.6906193+01:00 0HNHV3JPN956J:00000083 [INF] Sending file. Request path: '"/dashboard/css/dashboard.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dashboard.css"' (27b0a520)
+2025-12-19T17:38:45.6913702+01:00 0HNHV3JPN956J:00000083 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=70bcf81a-ed82-46cc-9192-7c5d7dfda5c3" - 200 5679 "text/css" 3.8144ms (74253ad3)
+2025-12-19T17:38:45.6925727+01:00 0HNHV3JPN956J:00000085 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=7dd2bf54-de57-4994-95ec-5fc026532a7e" - null null (d509f86a)
+2025-12-19T17:38:45.6966042+01:00 0HNHV3JPN956J:00000085 [INF] Sending file. Request path: '"/dashboard/css/dark-mode.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dark-mode.css"' (27b0a520)
+2025-12-19T17:38:45.6984639+01:00 0HNHV3JPN956J:00000085 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=7dd2bf54-de57-4994-95ec-5fc026532a7e" - 200 924 "text/css" 4.3867ms (74253ad3)
+2025-12-19T17:38:45.6984640+01:00 0HNHV3JPN956J:00000087 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=cfd3dce5-8b03-49fa-9a27-36e1e001d31a" - null null (d509f86a)
+2025-12-19T17:38:45.6984553+01:00 0HNHV3JPN956J:00000089 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-19T17:38:45.6996358+01:00 0HNHV3JPN956J:00000089 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 1.3983ms (74253ad3)
+2025-12-19T17:38:45.7029362+01:00 0HNHV3JPN956J:00000087 [INF] Sending file. Request path: '"/dashboard/js/dashboard.js"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\js\dashboard.js"' (27b0a520)
+2025-12-19T17:38:45.7031124+01:00 0HNHV3JPN956J:00000087 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=cfd3dce5-8b03-49fa-9a27-36e1e001d31a" - 200 3539 "text/javascript" 4.6702ms (74253ad3)
+2025-12-19T17:38:45.7195566+01:00 0HNHV3JPN956J:0000008B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-19T17:38:45.7432187+01:00 0HNHV3JPN956J:0000008B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 24.0697ms (74253ad3)
+2025-12-19T17:38:47.5938485+01:00 0HNHV3JPN956J:0000008D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/Courses/Create""" - null null (d509f86a)
+2025-12-19T17:38:47.6050226+01:00 0HNHV3JPN956J:0000008D [INF] Executing endpoint '"SchoolManagementSystem.Controllers.CoursesController.Create (SchoolManagementSystem)"' (500cc934)
+2025-12-19T17:38:47.6131647+01:00 0HNHV3JPN956J:0000008D [INF] Route matched with "{action = \"Create\", controller = \"Courses\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create()" on controller "SchoolManagementSystem.Controllers.CoursesController" ("SchoolManagementSystem"). (122b2fdf)
+2025-12-19T17:38:47.6367119+01:00 0HNHV3JPN956J:0000008D [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate]
+FROM [SchoolClasses] AS [s]
+WHERE [s].[CourseId] IS NULL" (0723d8ff)
+2025-12-19T17:38:47.6515158+01:00 0HNHV3JPN956J:0000008D [INF] Executed DbCommand ("4"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[Credits], [s].[Description], [s].[Name], [s].[TotalClasses]
+FROM [Subjects] AS [s]" (0723d8ff)
+2025-12-19T17:38:47.6543364+01:00 0HNHV3JPN956J:0000008D [INF] Executing ViewResult, running view "Create". (c83d0e25)
+2025-12-19T17:38:47.7147925+01:00 0HNHV3JPN956J:0000008D [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:38:47.7296308+01:00 0HNHV3JPN956J:0000008D [INF] Executed ViewResult - view "Create" executed in 76.4936ms. (f66409e9)
+2025-12-19T17:38:47.7301039+01:00 0HNHV3JPN956J:0000008D [INF] Executed action "SchoolManagementSystem.Controllers.CoursesController.Create (SchoolManagementSystem)" in 116.7747ms (afa2e885)
+2025-12-19T17:38:47.7302844+01:00 0HNHV3JPN956J:0000008D [INF] Executed endpoint '"SchoolManagementSystem.Controllers.CoursesController.Create (SchoolManagementSystem)"' (99874f2b)
+2025-12-19T17:38:47.7312718+01:00 0HNHV3JPN956J:0000008D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/Courses/Create""" - 200 null "text/html; charset=utf-8" 138.4421ms (74253ad3)
+2025-12-19T17:38:47.7720328+01:00 0HNHV3JPN956J:0000008F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=0acb3db2-6fd5-4494-974d-c249c1e28bc9" - null null (d509f86a)
+2025-12-19T17:38:47.7751179+01:00 0HNHV3JPN956J:0000008F [INF] Sending file. Request path: '"/dashboard/css/dashboard.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dashboard.css"' (27b0a520)
+2025-12-19T17:38:47.7755157+01:00 0HNHV3JPN956J:0000008F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=0acb3db2-6fd5-4494-974d-c249c1e28bc9" - 200 5679 "text/css" 4.2464ms (74253ad3)
+2025-12-19T17:38:47.7787533+01:00 0HNHV3JPN956J:00000091 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=0816844c-22ba-44e5-8781-c658510877d6" - null null (d509f86a)
+2025-12-19T17:38:47.7823087+01:00 0HNHV3JPN956J:00000093 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=5dee426b-35d4-473f-beb7-55573f2e02d1" - null null (d509f86a)
+2025-12-19T17:38:47.7826771+01:00 0HNHV3JPN956J:00000095 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-19T17:38:47.7838011+01:00 0HNHV3JPN956J:00000095 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 1.3947ms (74253ad3)
+2025-12-19T17:38:47.7840080+01:00 0HNHV3JPN956J:00000091 [INF] Sending file. Request path: '"/dashboard/css/dark-mode.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dark-mode.css"' (27b0a520)
+2025-12-19T17:38:47.7848123+01:00 0HNHV3JPN956J:00000091 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=0816844c-22ba-44e5-8781-c658510877d6" - 200 924 "text/css" 6.7823ms (74253ad3)
+2025-12-19T17:38:47.7868539+01:00 0HNHV3JPN956J:00000093 [INF] Sending file. Request path: '"/dashboard/js/dashboard.js"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\js\dashboard.js"' (27b0a520)
+2025-12-19T17:38:47.7870352+01:00 0HNHV3JPN956J:00000093 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=5dee426b-35d4-473f-beb7-55573f2e02d1" - 200 3539 "text/javascript" 5.3179ms (74253ad3)
+2025-12-19T17:38:47.8015178+01:00 0HNHV3JPN956J:00000097 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-19T17:38:47.8275507+01:00 0HNHV3JPN956J:00000097 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 26.5184ms (74253ad3)
+2025-12-19T17:39:24.6626471+01:00 0HNHV3JPN956J:00000099 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/""" - null null (d509f86a)
+2025-12-19T17:39:24.6707792+01:00 0HNHV3JPN956J:00000099 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (500cc934)
+2025-12-19T17:39:24.6712489+01:00 0HNHV3JPN956J:00000099 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "SchoolManagementSystem.Controllers.HomeController" ("SchoolManagementSystem"). (122b2fdf)
+2025-12-19T17:39:24.6952179+01:00 0HNHV3JPN956J:00000099 [INF] Executed DbCommand ("22"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [Courses] AS [c]
+LEFT JOIN [SchoolClasses] AS [s] ON [c].[Id] = [s].[CourseId]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [c].[Id], [s].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-12-19T17:39:24.7121702+01:00 0HNHV3JPN956J:00000099 [INF] Executed DbCommand ("13"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [SchoolClasses] AS [s]
+LEFT JOIN [Courses] AS [c] ON [s].[CourseId] = [c].[Id]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [s].[Id], [c].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-12-19T17:39:24.7139159+01:00 0HNHV3JPN956J:00000099 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2025-12-19T17:39:24.7360700+01:00 0HNHV3JPN956J:00000099 [INF] Executed DbCommand ("19"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:39:24.7486125+01:00 0HNHV3JPN956J:00000099 [INF] Executed ViewResult - view "Index" executed in 34.7998ms. (f66409e9)
+2025-12-19T17:39:24.7519067+01:00 0HNHV3JPN956J:00000099 [INF] Executed action "SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)" in 80.499ms (afa2e885)
+2025-12-19T17:39:24.7521208+01:00 0HNHV3JPN956J:00000099 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (99874f2b)
+2025-12-19T17:39:24.7577199+01:00 0HNHV3JPN956J:00000099 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/""" - 200 null "text/html; charset=utf-8" 96.0049ms (74253ad3)
+2025-12-19T17:39:24.8347029+01:00 0HNHV3JPN956J:0000009B [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-19T17:39:24.8363977+01:00 0HNHV3JPN956J:0000009B [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 1.481ms (74253ad3)
+2025-12-19T17:39:24.8368000+01:00 0HNHV3JPN956J:0000009D [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-19T17:39:24.8550227+01:00 0HNHV3JPN956J:0000009D [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 18.1949ms (74253ad3)
+2025-12-19T17:39:39.1559519+01:00 0HNHV3JPN956J:0000009F [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/""" - null null (d509f86a)
+2025-12-19T17:39:39.1609108+01:00 0HNHV3JPN956J:0000009F [INF] Executing endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (500cc934)
+2025-12-19T17:39:39.1611917+01:00 0HNHV3JPN956J:0000009F [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "SchoolManagementSystem.Controllers.HomeController" ("SchoolManagementSystem"). (122b2fdf)
+2025-12-19T17:39:39.1682139+01:00 0HNHV3JPN956J:0000009F [INF] Executed DbCommand ("5"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [Courses] AS [c]
+LEFT JOIN [SchoolClasses] AS [s] ON [c].[Id] = [s].[CourseId]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [c].[Id], [s].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-12-19T17:39:39.1749899+01:00 0HNHV3JPN956J:0000009F [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [SchoolClasses] AS [s]
+LEFT JOIN [Courses] AS [c] ON [s].[CourseId] = [c].[Id]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [s].[Id], [c].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-12-19T17:39:39.1766208+01:00 0HNHV3JPN956J:0000009F [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2025-12-19T17:39:39.1873820+01:00 0HNHV3JPN956J:0000009F [INF] Executed DbCommand ("3"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:39:39.1942749+01:00 0HNHV3JPN956J:0000009F [INF] Executed ViewResult - view "Index" executed in 17.9851ms. (f66409e9)
+2025-12-19T17:39:39.1950612+01:00 0HNHV3JPN956J:0000009F [INF] Executed action "SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)" in 33.7553ms (afa2e885)
+2025-12-19T17:39:39.1952287+01:00 0HNHV3JPN956J:0000009F [INF] Executed endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (99874f2b)
+2025-12-19T17:39:39.1954502+01:00 0HNHV3JPN956J:0000009F [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/""" - 200 null "text/html; charset=utf-8" 40.5229ms (74253ad3)
+2025-12-19T17:39:39.2469264+01:00 0HNHV3JPN956J:000000A1 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-19T17:39:39.2546510+01:00 0HNHV3JPN956J:000000A3 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-19T17:39:39.2618290+01:00 0HNHV3JPN956J:000000A3 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 7.6473ms (74253ad3)
+2025-12-19T17:39:39.2727580+01:00 0HNHV3JPN956J:000000A1 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 26.0645ms (74253ad3)
+2025-12-19T17:39:40.5829016+01:00 0HNHV3JPN956J:000000A5 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/Dashboard/AdminDashboard""" - null null (d509f86a)
+2025-12-19T17:39:40.5939623+01:00 0HNHV3JPN956J:000000A5 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.DashboardController.AdminDashboard (SchoolManagementSystem)"' (500cc934)
+2025-12-19T17:39:40.5941487+01:00 0HNHV3JPN956J:000000A5 [INF] Route matched with "{action = \"AdminDashboard\", controller = \"Dashboard\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] AdminDashboard()" on controller "SchoolManagementSystem.Controllers.DashboardController" ("SchoolManagementSystem"). (122b2fdf)
+2025-12-19T17:39:40.5944375+01:00 0HNHV3JPN956J:000000A5 [INF] Executing ViewResult, running view "AdminDashboard". (c83d0e25)
+2025-12-19T17:39:40.6034224+01:00 0HNHV3JPN956J:000000A5 [INF] Executed DbCommand ("2"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:39:40.6087503+01:00 0HNHV3JPN956J:000000A5 [INF] Executed ViewResult - view "AdminDashboard" executed in 14.1249ms. (f66409e9)
+2025-12-19T17:39:40.6101763+01:00 0HNHV3JPN956J:000000A5 [INF] Executed action "SchoolManagementSystem.Controllers.DashboardController.AdminDashboard (SchoolManagementSystem)" in 15.9156ms (afa2e885)
+2025-12-19T17:39:40.6103614+01:00 0HNHV3JPN956J:000000A5 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.DashboardController.AdminDashboard (SchoolManagementSystem)"' (99874f2b)
+2025-12-19T17:39:40.6105996+01:00 0HNHV3JPN956J:000000A5 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/Dashboard/AdminDashboard""" - 200 null "text/html; charset=utf-8" 27.7647ms (74253ad3)
+2025-12-19T17:39:40.6516752+01:00 0HNHV3JPN956J:000000A7 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=ef8c3704-15ab-4686-a1f8-65aa8a518958" - null null (d509f86a)
+2025-12-19T17:39:40.6554882+01:00 0HNHV3JPN956J:000000A7 [INF] Sending file. Request path: '"/dashboard/css/dashboard.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dashboard.css"' (27b0a520)
+2025-12-19T17:39:40.6584634+01:00 0HNHV3JPN956J:000000A7 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=ef8c3704-15ab-4686-a1f8-65aa8a518958" - 200 5679 "text/css" 7.1359ms (74253ad3)
+2025-12-19T17:39:40.6594434+01:00 0HNHV3JPN956J:000000A9 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=f7c97f17-f0a4-4d1a-91d9-062d31e780ce" - null null (d509f86a)
+2025-12-19T17:39:40.6603015+01:00 0HNHV3JPN956J:000000AB [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=cb8e0a80-e73c-4e8d-a387-775bdcc79a87" - null null (d509f86a)
+2025-12-19T17:39:40.6614073+01:00 0HNHV3JPN956J:000000AD [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-19T17:39:40.6627098+01:00 0HNHV3JPN956J:000000AD [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 1.2271ms (74253ad3)
+2025-12-19T17:39:40.6637947+01:00 0HNHV3JPN956J:000000A9 [INF] Sending file. Request path: '"/dashboard/css/dark-mode.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dark-mode.css"' (27b0a520)
+2025-12-19T17:39:40.6640597+01:00 0HNHV3JPN956J:000000A9 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=f7c97f17-f0a4-4d1a-91d9-062d31e780ce" - 200 924 "text/css" 4.5739ms (74253ad3)
+2025-12-19T17:39:40.6703391+01:00 0HNHV3JPN956J:000000AB [INF] Sending file. Request path: '"/dashboard/js/dashboard.js"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\js\dashboard.js"' (27b0a520)
+2025-12-19T17:39:40.6705516+01:00 0HNHV3JPN956J:000000AB [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=cb8e0a80-e73c-4e8d-a387-775bdcc79a87" - 200 3539 "text/javascript" 10.2901ms (74253ad3)
+2025-12-19T17:39:40.7207847+01:00 0HNHV3JPN956J:000000AF [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-19T17:39:40.7323333+01:00 0HNHV3JPN956J:000000AF [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 12.304ms (74253ad3)
+2025-12-19T17:39:45.7316002+01:00 0HNHV3JPN956J:000000B1 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/""" - null null (d509f86a)
+2025-12-19T17:39:45.7365054+01:00 0HNHV3JPN956J:000000B1 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (500cc934)
+2025-12-19T17:39:45.7366627+01:00 0HNHV3JPN956J:000000B1 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "SchoolManagementSystem.Controllers.HomeController" ("SchoolManagementSystem"). (122b2fdf)
+2025-12-19T17:39:45.7544097+01:00 0HNHV3JPN956J:000000B1 [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [Courses] AS [c]
+LEFT JOIN [SchoolClasses] AS [s] ON [c].[Id] = [s].[CourseId]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [c].[Id], [s].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-12-19T17:39:45.7695182+01:00 0HNHV3JPN956J:000000B1 [INF] Executed DbCommand ("12"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [SchoolClasses] AS [s]
+LEFT JOIN [Courses] AS [c] ON [s].[CourseId] = [c].[Id]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [s].[Id], [c].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-12-19T17:39:45.7707462+01:00 0HNHV3JPN956J:000000B1 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2025-12-19T17:39:45.7784222+01:00 0HNHV3JPN956J:000000B1 [INF] Executed DbCommand ("6"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:39:45.7853794+01:00 0HNHV3JPN956J:000000B1 [INF] Executed ViewResult - view "Index" executed in 14.4925ms. (f66409e9)
+2025-12-19T17:39:45.7856283+01:00 0HNHV3JPN956J:000000B1 [INF] Executed action "SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)" in 48.9047ms (afa2e885)
+2025-12-19T17:39:45.7856927+01:00 0HNHV3JPN956J:000000B1 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (99874f2b)
+2025-12-19T17:39:45.7880940+01:00 0HNHV3JPN956J:000000B1 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/""" - 200 null "text/html; charset=utf-8" 55.0599ms (74253ad3)
+2025-12-19T17:39:45.8315280+01:00 0HNHV3JPN956J:000000B3 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-19T17:39:45.8401458+01:00 0HNHV3JPN956J:000000B5 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-19T17:39:45.8438759+01:00 0HNHV3JPN956J:000000B5 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 4.9251ms (74253ad3)
+2025-12-19T17:39:45.8512527+01:00 0HNHV3JPN956J:000000B3 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 20.3966ms (74253ad3)
+2025-12-19T17:40:07.8161801+01:00 0HNHV3JPN956J:000000B7 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/Account/ChangePassword""" - null null (d509f86a)
+2025-12-19T17:40:07.8513145+01:00 0HNHV3JPN956J:000000B7 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AccountController.ChangePassword (SchoolManagementSystem)"' (500cc934)
+2025-12-19T17:40:07.8548856+01:00 0HNHV3JPN956J:000000B7 [INF] Route matched with "{action = \"ChangePassword\", controller = \"Account\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult ChangePassword()" on controller "SchoolManagementSystem.Controllers.AccountController" ("SchoolManagementSystem"). (122b2fdf)
+2025-12-19T17:40:07.8569242+01:00 0HNHV3JPN956J:000000B7 [INF] Executing ViewResult, running view "ChangePassword". (c83d0e25)
+2025-12-19T17:40:07.9089970+01:00 0HNHV3JPN956J:000000B7 [INF] Executed DbCommand ("15"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:40:07.9187261+01:00 0HNHV3JPN956J:000000B7 [INF] Executed ViewResult - view "ChangePassword" executed in 62.8747ms. (f66409e9)
+2025-12-19T17:40:07.9203406+01:00 0HNHV3JPN956J:000000B7 [INF] Executed action "SchoolManagementSystem.Controllers.AccountController.ChangePassword (SchoolManagementSystem)" in 65.3116ms (afa2e885)
+2025-12-19T17:40:07.9204212+01:00 0HNHV3JPN956J:000000B7 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AccountController.ChangePassword (SchoolManagementSystem)"' (99874f2b)
+2025-12-19T17:40:07.9257072+01:00 0HNHV3JPN956J:000000B7 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/Account/ChangePassword""" - 200 null "text/html; charset=utf-8" 106.3629ms (74253ad3)
+2025-12-19T17:40:07.9646392+01:00 0HNHV3JPN956J:000000B9 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-19T17:40:07.9685114+01:00 0HNHV3JPN956J:000000BB [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-19T17:40:07.9696590+01:00 0HNHV3JPN956J:000000BB [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 1.6085ms (74253ad3)
+2025-12-19T17:40:07.9916606+01:00 0HNHV3JPN956J:000000B9 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 27.3868ms (74253ad3)
+2025-12-19T17:40:10.8567401+01:00 0HNHV3JPN956J:000000BD [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/""" - null null (d509f86a)
+2025-12-19T17:40:10.8659495+01:00 0HNHV3JPN956J:000000BD [INF] Executing endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (500cc934)
+2025-12-19T17:40:10.8667855+01:00 0HNHV3JPN956J:000000BD [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "SchoolManagementSystem.Controllers.HomeController" ("SchoolManagementSystem"). (122b2fdf)
+2025-12-19T17:40:10.8979490+01:00 0HNHV3JPN956J:000000BD [INF] Executed DbCommand ("28"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [Courses] AS [c]
+LEFT JOIN [SchoolClasses] AS [s] ON [c].[Id] = [s].[CourseId]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [c].[Id], [s].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-12-19T17:40:10.9212246+01:00 0HNHV3JPN956J:000000BD [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [SchoolClasses] AS [s]
+LEFT JOIN [Courses] AS [c] ON [s].[CourseId] = [c].[Id]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [s].[Id], [c].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-12-19T17:40:10.9225609+01:00 0HNHV3JPN956J:000000BD [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2025-12-19T17:40:10.9349787+01:00 0HNHV3JPN956J:000000BD [INF] Executed DbCommand ("10"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:40:10.9443114+01:00 0HNHV3JPN956J:000000BD [INF] Executed ViewResult - view "Index" executed in 21.8803ms. (f66409e9)
+2025-12-19T17:40:10.9447064+01:00 0HNHV3JPN956J:000000BD [INF] Executed action "SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)" in 77.6515ms (afa2e885)
+2025-12-19T17:40:10.9448908+01:00 0HNHV3JPN956J:000000BD [INF] Executed endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (99874f2b)
+2025-12-19T17:40:10.9456918+01:00 0HNHV3JPN956J:000000BD [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/""" - 200 null "text/html; charset=utf-8" 90.1343ms (74253ad3)
+2025-12-19T17:40:11.0072796+01:00 0HNHV3JPN956J:000000BF [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-19T17:40:11.0109936+01:00 0HNHV3JPN956J:000000C1 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-19T17:40:11.0145471+01:00 0HNHV3JPN956J:000000C1 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 3.6751ms (74253ad3)
+2025-12-19T17:40:11.0259815+01:00 0HNHV3JPN956J:000000BF [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 18.7471ms (74253ad3)
+2025-12-19T17:40:13.2931417+01:00 0HNHV3JPN956J:000000C3 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/""" - null null (d509f86a)
+2025-12-19T17:40:13.2976961+01:00 0HNHV3JPN956J:000000C3 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (500cc934)
+2025-12-19T17:40:13.2978383+01:00 0HNHV3JPN956J:000000C3 [INF] Route matched with "{action = \"Index\", controller = \"Home\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Index()" on controller "SchoolManagementSystem.Controllers.HomeController" ("SchoolManagementSystem"). (122b2fdf)
+2025-12-19T17:40:13.3189283+01:00 0HNHV3JPN956J:000000C3 [INF] Executed DbCommand ("20"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [Courses] AS [c]
+LEFT JOIN [SchoolClasses] AS [s] ON [c].[Id] = [s].[CourseId]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [c].[Id], [s].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-12-19T17:40:13.3371161+01:00 0HNHV3JPN956J:000000C3 [INF] Executed DbCommand ("16"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [s].[Id], [s].[ClassName], [s].[CourseId], [s].[EndDate], [s].[StartDate], [c].[Id], [c].[CreatedAt], [c].[Description], [c].[Duration], [c].[IsActive], [c].[Name], [c].[UpdatedAt], [s1].[CourseId], [s1].[SubjectId], [s1].[Id], [s1].[Credits], [s1].[Description], [s1].[Name], [s1].[TotalClasses]
+FROM [SchoolClasses] AS [s]
+LEFT JOIN [Courses] AS [c] ON [s].[CourseId] = [c].[Id]
+LEFT JOIN (
+    SELECT [c0].[CourseId], [c0].[SubjectId], [s0].[Id], [s0].[Credits], [s0].[Description], [s0].[Name], [s0].[TotalClasses]
+    FROM [CourseSubjects] AS [c0]
+    INNER JOIN [Subjects] AS [s0] ON [c0].[SubjectId] = [s0].[Id]
+) AS [s1] ON [c].[Id] = [s1].[CourseId]
+ORDER BY [s].[Id], [c].[Id], [s1].[CourseId], [s1].[SubjectId]" (0723d8ff)
+2025-12-19T17:40:13.3380959+01:00 0HNHV3JPN956J:000000C3 [INF] Executing ViewResult, running view "Index". (c83d0e25)
+2025-12-19T17:40:13.3475408+01:00 0HNHV3JPN956J:000000C3 [INF] Executed DbCommand ("8"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:40:13.3548233+01:00 0HNHV3JPN956J:000000C3 [INF] Executed ViewResult - view "Index" executed in 16.705ms. (f66409e9)
+2025-12-19T17:40:13.3550071+01:00 0HNHV3JPN956J:000000C3 [INF] Executed action "SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)" in 57.1004ms (afa2e885)
+2025-12-19T17:40:13.3550643+01:00 0HNHV3JPN956J:000000C3 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.HomeController.Index (SchoolManagementSystem)"' (99874f2b)
+2025-12-19T17:40:13.3553309+01:00 0HNHV3JPN956J:000000C3 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/""" - 200 null "text/html; charset=utf-8" 62.2742ms (74253ad3)
+2025-12-19T17:40:13.3959553+01:00 0HNHV3JPN956J:000000C5 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-19T17:40:13.3984504+01:00 0HNHV3JPN956J:000000C7 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-19T17:40:13.4009983+01:00 0HNHV3JPN956J:000000C7 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 2.11ms (74253ad3)
+2025-12-19T17:40:13.4091305+01:00 0HNHV3JPN956J:000000C5 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 13.5824ms (74253ad3)
+2025-12-19T17:40:14.3712336+01:00 0HNHV3JPN956J:000000C9 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/Alert/UnresolvedAlerts""" - null null (d509f86a)
+2025-12-19T17:40:14.3777915+01:00 0HNHV3JPN956J:000000C9 [INF] Executing endpoint '"SchoolManagementSystem.Controllers.AlertController.UnresolvedAlerts (SchoolManagementSystem)"' (500cc934)
+2025-12-19T17:40:14.3779993+01:00 0HNHV3JPN956J:000000C9 [INF] Route matched with "{action = \"UnresolvedAlerts\", controller = \"Alert\"}". Executing controller action with signature "System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] UnresolvedAlerts()" on controller "SchoolManagementSystem.Controllers.AlertController" ("SchoolManagementSystem"). (122b2fdf)
+2025-12-19T17:40:14.3879971+01:00 0HNHV3JPN956J:000000C9 [INF] Executed DbCommand ("7"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:40:14.3885295+01:00 0HNHV3JPN956J:000000C9 [INF] Executing ViewResult, running view "UnresolvedAlerts". (c83d0e25)
+2025-12-19T17:40:14.3993923+01:00 0HNHV3JPN956J:000000C9 [INF] Executed DbCommand ("9"ms) [Parameters=[""], CommandType='Text', CommandTimeout='30']"
+""SELECT [a].[Id], [a].[CreatedAt], [a].[EmployeeId], [a].[IsResolved], [a].[Message], [e].[Id], [e].[AcademicDegree], [e].[Department], [e].[FirstName], [e].[HireDate], [e].[ImageId], [e].[LastName], [e].[PhoneNumber], [e].[Status], [e].[UserId]
+FROM [Alerts] AS [a]
+INNER JOIN [Employees] AS [e] ON [a].[EmployeeId] = [e].[Id]
+WHERE [a].[IsResolved] = CAST(0 AS bit)" (0723d8ff)
+2025-12-19T17:40:14.4044543+01:00 0HNHV3JPN956J:000000C9 [INF] Executed ViewResult - view "UnresolvedAlerts" executed in 15.6614ms. (f66409e9)
+2025-12-19T17:40:14.4046312+01:00 0HNHV3JPN956J:000000C9 [INF] Executed action "SchoolManagementSystem.Controllers.AlertController.UnresolvedAlerts (SchoolManagementSystem)" in 26.5763ms (afa2e885)
+2025-12-19T17:40:14.4047150+01:00 0HNHV3JPN956J:000000C9 [INF] Executed endpoint '"SchoolManagementSystem.Controllers.AlertController.UnresolvedAlerts (SchoolManagementSystem)"' (99874f2b)
+2025-12-19T17:40:14.4052249+01:00 0HNHV3JPN956J:000000C9 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/Alert/UnresolvedAlerts""" - 200 null "text/html; charset=utf-8" 35.1811ms (74253ad3)
+2025-12-19T17:40:14.4425093+01:00 0HNHV3JPN956J:000000CB [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=ffc09d3d-6197-47fd-940d-7d97c752b026" - null null (d509f86a)
+2025-12-19T17:40:14.4454115+01:00 0HNHV3JPN956J:000000CB [INF] Sending file. Request path: '"/dashboard/css/dashboard.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dashboard.css"' (27b0a520)
+2025-12-19T17:40:14.4463778+01:00 0HNHV3JPN956J:000000CB [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dashboard.css""?v=ffc09d3d-6197-47fd-940d-7d97c752b026" - 200 5679 "text/css" 4.2025ms (74253ad3)
+2025-12-19T17:40:14.4481180+01:00 0HNHV3JPN956J:000000CF [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=c4662557-d2bc-4a5e-a02a-bdd2a36c240b" - null null (d509f86a)
+2025-12-19T17:40:14.4484382+01:00 0HNHV3JPN956J:000000D1 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - null null (d509f86a)
+2025-12-19T17:40:14.4484249+01:00 0HNHV3JPN956J:000000CD [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=40f54231-0165-47aa-b803-a8f254f6a219" - null null (d509f86a)
+2025-12-19T17:40:14.4521747+01:00 0HNHV3JPN956J:000000CD [INF] Sending file. Request path: '"/dashboard/css/dark-mode.css"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\css\dark-mode.css"' (27b0a520)
+2025-12-19T17:40:14.4531087+01:00 0HNHV3JPN956J:000000CD [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/css/dark-mode.css""?v=40f54231-0165-47aa-b803-a8f254f6a219" - 200 924 "text/css" 5.1145ms (74253ad3)
+2025-12-19T17:40:14.4576287+01:00 0HNHV3JPN956J:000000D1 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_framework/aspnetcore-browser-refresh.js""" - 200 16529 "application/javascript; charset=utf-8" 5.5732ms (74253ad3)
+2025-12-19T17:40:14.4577456+01:00 0HNHV3JPN956J:000000CF [INF] Sending file. Request path: '"/dashboard/js/dashboard.js"'. Physical path: '"C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\wwwroot\dashboard\js\dashboard.js"' (27b0a520)
+2025-12-19T17:40:14.4578936+01:00 0HNHV3JPN956J:000000CF [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/dashboard/js/dashboard.js""?v=c4662557-d2bc-4a5e-a02a-bdd2a36c240b" - 200 3539 "text/javascript" 9.8192ms (74253ad3)
+2025-12-19T17:40:14.4716302+01:00 0HNHV3JPN956J:000000D3 [INF] Request starting "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - null null (d509f86a)
+2025-12-19T17:40:14.5038547+01:00 0HNHV3JPN956J:000000D3 [INF] Request finished "HTTP/2" "GET" "https"://"localhost:58514""""/_vs/browserLink""" - 200 null "text/javascript; charset=UTF-8" 32.2876ms (74253ad3)

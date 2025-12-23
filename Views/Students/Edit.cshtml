@@ -1,0 +1,117 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Students";
+    ViewBag.SubPageTitle = "Edit";
+}
+
+@model SchoolManagementSystem.Models.StudentViewModel
+
+@{
+    ViewData["Title"] = "Edit Student";
+}
+
+<h2>Edit Student</h2>
+
+@if (!ViewData.ModelState.IsValid)
+{
+    <div class="alert alert-danger">
+        <ul>
+            @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+            {
+                <li>@error.ErrorMessage</li>
+            }
+        </ul>
+    </div>
+}
+
+<form id="editStudentForm" asp-action="Edit" method="post" enctype="multipart/form-data">
+    <input type="hidden" asp-for="Id" />
+    <input type="hidden" asp-for="UserId" /> <!-- Keeps the UserId -->
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label asp-for="FirstName" class="form-label">First Name <span class="text-danger">*</span></label>
+            <input asp-for="FirstName" class="form-control" required />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="LastName" class="form-label">Last Name <span class="text-danger">*</span></label>
+            <input asp-for="LastName" class="form-control" required />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+    </div>
+
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label asp-for="SchoolClassId" class="form-label">School Class <span class="text-danger">*</span></label>
+            <select asp-for="SchoolClassId" class="form-select" asp-items="ViewBag.SchoolClassId" required>
+                <option value="">Select Class</option>
+            </select>
+            <span asp-validation-for="SchoolClassId" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="EnrollmentDate" class="form-label">Enrollment Date <span class="text-danger">*</span></label>
+            <input asp-for="EnrollmentDate" type="date" class="form-control" required />
+            <span asp-validation-for="EnrollmentDate" class="text-danger"></span>
+        </div>
+    </div>
+
+    <!-- Space for Profile Image -->
+    <div class="mb-3">
+        <label asp-for="ImageFile" class="form-label">Profile Picture</label>
+        <div class="d-flex align-items-center">
+            <div id="imageContainer">
+                <!-- Current image -->
+                <img id="currentImage" src="@Model.ImageFullPath" alt="Profile Picture" class="rounded-circle shadow-sm" style="width: 150px; height: 150px;" />
+                <!-- Preview of new image (initially hidden) -->
+                <img id="newImagePreview" class="rounded-circle shadow-sm" style="width: 150px; height: 150px; display: none;" alt="New Image Preview" />
+            </div>
+            <div class="ms-3">
+                <input asp-for="ImageFile" type="file" class="form-control-file" accept="image/*" id="newImageFile" />
+                <span asp-validation-for="ImageFile" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="Status" class="form-label">Status <span class="text-danger">*</span></label>
+        <select asp-for="Status" class="form-select" required>
+            <option value="">Select Status</option>
+            @foreach (var status in Enum.GetValues(typeof(SchoolManagementSystem.Data.Entities.StudentStatus)).Cast<SchoolManagementSystem.Data.Entities.StudentStatus>())
+            {
+                <option value="@status">@status</option>
+            }
+        </select>
+        <span asp-validation-for="Status" class="text-danger"></span>
+    </div>
+
+    <div class="d-flex justify-content-between">
+        <button type="submit" class="btn btn-primary">Save Changes</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/formHelpers.js"></script> 
+
+    <script>
+        setupNewImagePreview("newImageFile", "newImagePreview", "currentImage");
+
+        // Função para o SweetAlert2 quando há erro do servidor
+        $(document).ready(function () {
+        @if (TempData["ErrorMessage"] != null)
+        {
+            <text>
+                    Swal.fire({
+                        title: 'Error',
+                        text: '@TempData["ErrorMessage"]',
+                        icon: 'error'
+                    });
+            </text>
+        }
+                });
+        setupSweetAlertOnSubmit("editStudentForm", "Student updated successfully.");
+    </script>
+}
+

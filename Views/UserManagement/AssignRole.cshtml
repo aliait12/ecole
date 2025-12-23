@@ -1,0 +1,19 @@
+﻿@model SchoolManagementSystem.Models.AssignRoleViewModel
+
+<h2>Assign Role to User</h2>
+
+<form asp-action="AssignRole" method="post">
+    <input type="hidden" asp-for="UserId" />
+
+    <div class="form-group">
+        <label asp-for="SelectedRole">Select Role</label>
+        <select asp-for="SelectedRole" class="form-control">
+            @foreach (var role in Model.Roles)
+            {
+                <option value="@role">@role</option>
+            }
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Assign Role</button>
+</form>

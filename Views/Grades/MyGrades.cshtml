@@ -1,0 +1,55 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Grade";
+    ViewBag.SubPageTitle = "MyGrades";
+}
+
+@model IEnumerable<SchoolManagementSystem.Models.StudentSubjectGradeViewModel>
+
+<h2 class="mt-4 mb-3">My Subjects and Grades</h2>
+
+
+<div class="card mb-4">
+    <div class="card-body">
+        <div class="row text-center">
+            <div class="col-md-6">
+                <h5 class="card-title">Overall Average Grade</h5>
+                <p class="card-text display-6">@ViewBag.OverallAverageGrade</p>
+            </div>
+            <div class="col-md-6">
+                <h5 class="card-title">Overall Grade Status</h5>
+                <p class="card-text display-6">
+                    <span class="badge @((ViewBag.OverallGradeStatus == "Passed") ? "bg-success" : "bg-danger")">
+                        @ViewBag.OverallGradeStatus
+                    </span>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<table class="table table-striped">
+    <thead class="table-dark">
+        <tr>
+            <th>Subject</th>
+            <th>Grade</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Subject.Name</td>
+                <td>@(item.Grade?.Value.ToString("F2") ?? "No Grade")</td>
+                <td>
+                    <span class="badge @((item.Grade?.Status == "Passed") ? "bg-success" : "bg-danger")">
+                        @(item.Grade?.Status ?? "No Status")
+                    </span>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-action="Index" class="btn btn-secondary mt-3">Back to Home</a>

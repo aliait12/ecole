@@ -1,0 +1,13 @@
+  Identification des projets ?? restaurer...
+  Tous les projets sont ?? jour pour la restauration.
+C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\Controllers\DashboardController.cs(17,26): error CS0246: Le nom de type ou d'espace de noms 'DataContext' est introuvable (vous manque-t-il une directive using ou une r??f??rence d'assembly???) [C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem.csproj]
+C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\Controllers\DashboardController.cs(19,70): error CS0246: Le nom de type ou d'espace de noms 'DataContext' est introuvable (vous manque-t-il une directive using ou une r??f??rence d'assembly???) [C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem.csproj]
+
+??CHEC de la build.
+
+C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\Controllers\DashboardController.cs(17,26): error CS0246: Le nom de type ou d'espace de noms 'DataContext' est introuvable (vous manque-t-il une directive using ou une r??f??rence d'assembly???) [C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem.csproj]
+C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\Controllers\DashboardController.cs(19,70): error CS0246: Le nom de type ou d'espace de noms 'DataContext' est introuvable (vous manque-t-il une directive using ou une r??f??rence d'assembly???) [C:\Users\PC\SchoolManagementSystem\SchoolManagementSystem\SchoolManagementSystem.csproj]
+    0 Avertissement(s)
+    2 Erreur(s)
+
+Temps ??coul?? 00:00:03.07

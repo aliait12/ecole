@@ -1,0 +1,75 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Courses";
+    ViewBag.SubPageTitle = "Index";
+}
+
+@using Newtonsoft.Json
+@model IEnumerable<SchoolManagementSystem.Models.CourseViewModel>
+
+@{
+    ViewData["Title"] = "Courses";
+
+    var jsonSerializerSettings = new JsonSerializerSettings
+            {
+                ReferenceLoopHandling = ReferenceLoopHandling.Ignore,
+                Formatting = Formatting.Indented
+            };
+
+    var serializedData = JsonConvert.SerializeObject(Model, jsonSerializerSettings);
+}
+
+<h2>Courses</h2>
+
+<div>
+    <a asp-action="Create" class="btn btn-success mb-3">Create New Course</a>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="alert alert-info">No courses found.</div>
+}
+else
+{
+    <div id="Grid"></div>
+}
+
+@section Scripts {
+    <script id="actionTemplate" type="text/x-template">
+        <a href="/Courses/Edit/${Id}" class="btn btn-warning">Edit</a>
+        <a href="/Courses/Delete/${Id}" class="btn btn-danger">Delete</a>
+        <a href="/Courses/Details/${Id}" class="btn btn-primary">Details</a>
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var serializedData = @Html.Raw(serializedData);
+
+            var grid = new ej.grids.Grid({
+                dataSource: serializedData,
+                allowPaging: true,
+                allowSorting: true,
+                allowFiltering: true,
+                allowGrouping: true,
+                filterSettings: { type: 'Menu' },
+                pageSettings: { pageSize: 10 },
+                toolbar: ['Search'],
+                groupSettings: { showGroupedColumn: true },
+                columns: [
+                    { field: "Name", headerText: "Course Name", width: 200 },
+                    { field: "Description", headerText: "Description", width: 300 }, // Adicionado
+                    { field: "Duration", headerText: "Duration (Weeks)", width: 100 }, // Adicionado
+                    { field: "IsActive", headerText: "Active", width: 100, type: 'boolean', editType: 'booleanedit' }, // Adicionado
+                    {
+                        headerText: "Actions",
+                        width: 180,
+                        textAlign: "Center",
+                        template: "#actionTemplate"
+                    }
+                ]
+            });
+
+            grid.appendTo("#Grid");
+        });
+    </script>
+}

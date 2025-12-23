@@ -1,0 +1,73 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Courses";
+    ViewBag.SubPageTitle = "Details";
+}
+
+@model SchoolManagementSystem.Models.CourseViewModel
+
+@{
+    ViewData["Title"] = "Course Details";
+}
+
+<h2>Course Details</h2>
+
+<div class="card">
+    <div class="card-body">
+        <h4>@Model.Name</h4>
+        <hr />
+        <dl class="row">
+            <dt class="col-sm-3" data-toggle="tooltip" title="A brief description of the course">Description:</dt>
+            <dd class="col-sm-9">@Model.Description</dd>
+
+            <dt class="col-sm-3" data-toggle="tooltip" title="The total duration of the course">Duration:</dt>
+            <dd class="col-sm-9">@Model.Duration</dd>
+
+            <dt class="col-sm-3" data-toggle="tooltip" title="Classes that are associated with this course">Associated School Classes:</dt>
+            <dd class="col-sm-9">
+                @if (Model.SchoolClassItems != null && Model.SchoolClassItems.Any())
+                {
+                    <ul>
+                        @foreach (var schoolClass in Model.SchoolClassItems)
+                        {
+                            <li>@schoolClass.Text</li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <span>No associated classes</span>
+                }
+            </dd>
+
+            <dt class="col-sm-3" data-toggle="tooltip" title="Subjects that are part of this course">Associated Subjects:</dt>
+            <dd class="col-sm-9">
+                @if (Model.SubjectItems != null && Model.SubjectItems.Any())
+                {
+                    <ul>
+                        @foreach (var subject in Model.SubjectItems)
+                        {
+                            <li>@subject.Text</li>
+                        }
+                    </ul>
+                }
+                else
+                {
+                    <span>No associated subjects</span>
+                }
+            </dd>
+        </dl>
+
+        <div>
+            <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+}

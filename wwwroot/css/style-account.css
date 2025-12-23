@@ -1,0 +1,43 @@
+﻿body.form-account-background {
+    background-image: url('../images/bgback.jpg'); /* Caminho para a imagem de fundo */
+    background-size: cover; /* Cobre toda a área */
+    background-position: center; /* Centraliza a imagem */
+    font-family: 'Ubuntu', sans-serif; /* Fonte usada */
+}
+
+
+.form-account-bg-form {
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco com leve transparência */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 20px; /* Adicione padding ao fundo do formulário */
+    max-width: 600px; /* Limite a largura do formulário para evitar que ele fique muito largo */
+    margin: auto; /* Centraliza o formulário */
+}
+
+main.form-account-padding {
+    padding-top: 40px; /* Ajuste conforme necessário */
+    padding-bottom: 40px; /* Ajuste conforme necessário */
+}
+
+h2.form-account-title {
+    margin-bottom: 20px; /* Espaçamento inferior */
+    color: #DFB83A; /* Cor do texto */
+    font-weight: bold; /* Define o texto como negrito */
+}
+
+
+
+.form-account-group {
+    margin-bottom: 15px; /* Espaçamento entre os campos do formulário */
+}
+
+.form-account-success {
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+/* Para responsividade */
+@media (max-width: 576px) {
+    .col-md-4 {
+        width: 100%; /* Certifica que em telas pequenas o formulário ocupa toda a largura */
+    }
+}

@@ -1,0 +1,37 @@
+﻿@{
+    Layout = "_Dashboard";
+    ViewBag.PageTitle = "Attendance";
+    ViewBag.SubPageTitle = "EditAttendance";
+}
+
+@model SchoolManagementSystem.Models.AttendanceViewModel
+@{
+    ViewBag.Title = "Edit Attendance";
+}
+
+<h2>Edit Attendance for @Model.StudentName</h2>
+
+<form asp-action="EditAttendance" method="post">
+    <div class="form-group">
+        <label asp-for="SubjectName">Subject</label>
+        <input asp-for="SubjectName" class="form-control" readonly />
+        <input type="hidden" asp-for="SubjectId" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Date">Date</label>
+        <input asp-for="Date" class="form-control" type="datetime-local" />
+        <span asp-validation-for="Date" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Description">Description (Optional)</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+
+    <input type="hidden" asp-for="StudentId" />
+    <input type="hidden" asp-for="Id" />
+
+    <button type="submit" class="btn btn-success">Save Changes</button>
+    <a asp-action="Details" asp-route-studentId="@Model.StudentId" class="btn btn-secondary">Cancel</a>
+</form>
